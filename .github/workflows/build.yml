@@ -47,7 +47,7 @@ jobs:
           python main.py
       - name: Publish to gh-pages
         run: |
-          cd output
+          cd build
           touch .nojekyll
           git config user.name github-actions
           git config user.email github-actions@github.com
