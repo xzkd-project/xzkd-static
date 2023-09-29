@@ -2,6 +2,7 @@ import requests
 import re
 import urllib.parse
 import json
+import os
 
 raw_header = """
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0
@@ -30,10 +31,8 @@ Sec-Fetch-User: ?1
 normal_headers = {i.split(": ")[0]: i.split(": ")[1] for i in raw_header.split("\n")[1:-1]}
 cas_login_headers = {i.split(": ")[0]: i.split(": ")[1] for i in cas_login_raw_header.split("\n")[1:-1]}
 
-with open(".env") as f:
-    env = dict([line.strip().split("=") for line in f.readlines()])
-    USTC_PASSPORT_USERNAME = env["USTC_PASSPORT_USERNAME"]
-    USTC_PASSPORT_PASSWORD = env["USTC_PASSPORT_PASSWORD"]
+USTC_PASSPORT_USERNAME = os.environ["USTC_PASSPORT_USERNAME"]
+USTC_PASSPORT_PASSWORD = os.environ["USTC_PASSPORT_PASSWORD"]
 
 def cas_login_data(lt: str) -> str:
     data = {
