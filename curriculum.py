@@ -37,7 +37,7 @@ def make_curriculum():
         course_list = get_course_list(str(semester_id))
         save(course_list, os.path.join(curriculum_dir, str(semester_id), "course_list.json"))
 
-        for course in tqdm(course_list[:3]):
+        for course in tqdm(course_list):
             course_id = course["id"]
             course_info = get_course_info(s, [str(course_id)])
             save(course_info, os.path.join(curriculum_dir, str(semester_id), f"{str(course_id)}.json"))
