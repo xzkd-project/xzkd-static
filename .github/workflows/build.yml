@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 jobs:
-  backup:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
