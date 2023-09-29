@@ -41,6 +41,8 @@ jobs:
       - name: Run Program
         env:
           TZ: "Asia/Shanghai"
+          USTC_PASSPORT_USERNAME: ${{ secrets.USTC_PASSPORT_USERNAME }}
+          USTC_PASSPORT_PASSWORD: ${{ secrets.USTC_PASSPORT_PASSWORD }}
         run: |
           python main.py
       - name: Publish to gh-pages
