@@ -1,7 +1,7 @@
 import os
 import shutil
 
-from curriculum import *
+from curriculum import main as make_curriculum
 
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.abspath(__file__))
