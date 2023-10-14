@@ -83,7 +83,7 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: [Course])
         startDate = date + int(startHHMM[:2]) * 3600 + int(startHHMM[2:]) * 60
         endDate = date + int(endHHMM[:2]) * 3600 + int(endHHMM[2:]) * 60
 
-        location = schedule_json["room"] if schedule_json["room"] else schedule_json["customPlace"]
+        location = schedule_json["room"]["nameZh"] if schedule_json["room"] else schedule_json["customPlace"]
 
         lecture = Lecture(
             startDate=startDate,
