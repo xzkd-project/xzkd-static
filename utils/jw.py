@@ -1,22 +1,25 @@
-import json
 import re
+
 import aiohttp
 
+from models.course import Course
+from models.lecture import Lecture
 from utils.cas import cas_login_data
-from utils.constants import normal_headers as headers
 from utils.constants import cas_login_headers
+from utils.constants import normal_headers as headers
+from utils.tools import raw_date_to_unix_timestamp
 
 
 async def login(session: aiohttp.ClientSession):
     url = "https://jw.ustc.edu.cn/"
-    response = await session.get(
+    await session.get(
         url,
         headers=headers,
         allow_redirects=False
     )
 
     url = "https://jw.ustc.edu.cn/ucas-sso/login"
-    response = await session.get(
+    await session.get(
         url=url,
         headers=headers,
         allow_redirects=False
@@ -52,13 +55,11 @@ async def login(session: aiohttp.ClientSession):
         raise Exception("Login failed")
 
 
-async def get_course_info(session: aiohttp.ClientSession, id_list: list[str]) -> json:
-    """
-    Notice: login first
-    """
+async def update_lectures(session: aiohttp.ClientSession, course_list: [Course]) -> [Course]:
+    course_id_list = [course.id for course in course_list]
     url = "https://jw.ustc.edu.cn/ws/schedule-table/datum"
     data = {
-        "lessonIds": id_list,
+        "lessonIds": course_id_list,
     }
     _headers = headers | {
         "Accept": "*/*",
@@ -71,4 +72,32 @@ async def get_course_info(session: aiohttp.ClientSession, id_list: list[str]) ->
         allow_redirects=False
     )
     json = await r.json()
-    return json["result"]["lessonList"]
+    json = json["result"]
+
+    for schedule_json in json["scheduleList"]:
+        course = [course for course in course_list if course.id == schedule_json["lessonId"]][0]
+
+        date = raw_date_to_unix_timestamp(schedule_json["date"])
+        startHHMM = str(schedule_json["startTime"])
+        endHHMM = str(schedule_json["endTime"])
+        startDate = date + int(startHHMM[:2]) * 3600 + int(startHHMM[2:]) * 60
+        endDate = date + int(endHHMM[:2]) * 3600 + int(endHHMM[2:]) * 60
+
+        location = schedule_json["room"] if schedule_json["room"] else schedule_json["customPlace"]
+
+        lecture = Lecture(
+            startDate=startDate,
+            endDate=endDate,
+            name=course.name,
+            location=location,
+            teacherName=schedule_json["personName"],
+            periods=schedule_json["periods"],
+            additionalInfo={}
+        )
+
+        for course in course_list:
+            if course.id == schedule_json["lessonId"]:
+                course.lectures.append(lecture)
+                break
+
+    return course_list
