@@ -67,7 +67,7 @@ async def get_courses(semester_id: str) -> [Course]:
             lessonCode=course_json["code"],
             teacherName=teachers,
             lectures=[],
-            description=course_json["dateTimePlacePersonText"],
+            description=course_json["dateTimePlacePersonText"]["cn"],
             credit=course_json["credits"],
             additionalInfo={}
         ))
