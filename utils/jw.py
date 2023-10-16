@@ -80,6 +80,11 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: [Course])
         date = raw_date_to_unix_timestamp(schedule_json["date"])
         startHHMM = str(schedule_json["startTime"])
         endHHMM = str(schedule_json["endTime"])
+
+        # fill 0 if len < 4
+        startHHMM = "0" * (4 - len(startHHMM)) + startHHMM
+        endHHMM = "0" * (4 - len(endHHMM)) + endHHMM
+
         startDate = date + int(startHHMM[:2]) * 3600 + int(startHHMM[2:]) * 60
         endDate = date + int(endHHMM[:2]) * 3600 + int(endHHMM[2:]) * 60
 
