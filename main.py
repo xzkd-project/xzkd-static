@@ -10,9 +10,6 @@ if __name__ == '__main__':
 
     if not os.path.exists(build_dir):
         os.mkdir(build_dir)
-    else:
-        shutil.rmtree(build_dir)
-        os.mkdir(build_dir)
 
     # ./static -> ./build/*
     static_dir = os.path.join(base_dir, "static")

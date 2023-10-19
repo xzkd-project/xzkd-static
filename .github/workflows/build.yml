@@ -23,6 +23,13 @@ jobs:
         with:
           repository: ${{ github.repository }}
           ref: master
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
+        with:
+          set-safe-directory: ''
+          repository: ${{ github.repository }}
+          ref: gh-pages
+          path: build
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
@@ -42,11 +49,8 @@ jobs:
         run: |
           cd build
           touch .nojekyll
-          git init -b gh-pages
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
           git commit -m "Update from: ${{ github.sha }}" --allow-empty
-          git remote add origin https://github.com/XZKD-Project/xzkd-static.git
-          git config --local gc.auto 0
           (git push -f origin gh-pages) || true
