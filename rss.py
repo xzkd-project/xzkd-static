@@ -7,6 +7,8 @@ from tqdm import tqdm
 import feedgenerator
 import datetime
 
+from utils.tj_rss import tj_ustc_RSS
+
 async def get_and_clean_feed(url: str, path_to_save: str):
     feed = feedparser.parse(url)
 
@@ -55,6 +57,8 @@ async def make_rss():
 
     if not os.path.exists(rss_path):
         os.mkdir(rss_path)
+
+    tj_ustc_RSS(rss_path)
 
     for feed in tqdm(config['feeds']):
         filepath = os.path.join(rss_path, feed['xmlFilename'])
