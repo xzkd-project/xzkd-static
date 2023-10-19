@@ -1,0 +1,73 @@
+{
+    "py/object": "models.course.Course",
+    "id": 100001,
+    "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+    "courseCode": "210505",
+    "lessonCode": "210505.08",
+    "teacherName": "\u90d1\u91cd",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1221004200,
+            "endDate": 1221009900,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1221183900,
+            "endDate": 1221189600,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1221609000,
+            "endDate": 1221614700,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1221788700,
+            "endDate": 1221794400,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1222213800,
+            "endDate": 1222219500,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1222393500,
+            "endDate": 1222399200,
+            "name": "\u8ba1\u7b97\u673a\u6587\u5316\u57fa\u7840",
+            "location": "5103",
+            "teacherName": "\u90d1\u91cd",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "2~4\u5468 5103 :3(1,2) \u90d1\u91cd\n2~4\u5468 5103 :5(3,4) \u90d1\u91cd",
+    "credit": 1,
+    "additionalInfo": {}
+}

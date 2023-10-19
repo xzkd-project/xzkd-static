@@ -1,0 +1,53 @@
+{
+    "py/object": "models.course.Course",
+    "id": 129621,
+    "name": "\u5b59\u5b50\u5175\u6cd5\u4e2d\u7684\u601d\u7ef4\u667a\u6167",
+    "courseCode": "HS1543M",
+    "lessonCode": "HS1543M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08, \u6155\u8bfe\u6559\u5e08, \u94ae\u536b\u661f",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1601379000,
+            "endDate": 1601384700,
+            "name": "\u5b59\u5b50\u5175\u6cd5\u4e2d\u7684\u601d\u7ef4\u667a\u6167",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1602588600,
+            "endDate": 1602594300,
+            "name": "\u5b59\u5b50\u5175\u6cd5\u4e2d\u7684\u601d\u7ef4\u667a\u6167",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1604403000,
+            "endDate": 1604408700,
+            "name": "\u5b59\u5b50\u5175\u6cd5\u4e2d\u7684\u601d\u7ef4\u667a\u6167",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1606217400,
+            "endDate": 1606223100,
+            "name": "\u5b59\u5b50\u5175\u6cd5\u4e2d\u7684\u601d\u7ef4\u667a\u6167",
+            "location": "3B103",
+            "teacherName": "\u94ae\u536b\u661f",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3\u5468 3B103 :2(11,12) \u6768\u6653\u5a77\n5,8\u5468 3B103 :2(11,12) \u6155\u8bfe\u6559\u5e08\n11\u5468 3B103 :2(11,12) \u94ae\u536b\u661f",
+    "credit": 2,
+    "additionalInfo": {}
+}

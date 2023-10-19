@@ -1,0 +1,63 @@
+{
+    "py/object": "models.course.Course",
+    "id": 94672,
+    "name": "\u7cfb\u7edf\u6570\u636e",
+    "courseCode": "601999",
+    "lessonCode": "601999.01",
+    "teacherName": "",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1535974200,
+            "endDate": 1535982900,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "3A107",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1536025500,
+            "endDate": 1536034200,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5407",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1536198300,
+            "endDate": 1536207000,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5206",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1536277800,
+            "endDate": 1536283500,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "3A105",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1536284700,
+            "endDate": 1536293400,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "3A105",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1\u5468 3A107 :1(11,12,13)\n1\u5468 5407 :2(3,4,5)\n1\u5468 5206 :4(3,4,5)\n1\u5468 3A105 :5(1,2)\n1\u5468 3A105 :5(3,4,5)",
+    "credit": 0,
+    "additionalInfo": {}
+}

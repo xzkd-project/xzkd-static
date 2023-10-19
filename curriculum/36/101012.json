@@ -1,0 +1,23 @@
+{
+    "py/object": "models.course.Course",
+    "id": 101012,
+    "name": "\u4fe1\u606f\u68c0\u7d22\u4e0e\u5206\u6790\u5229\u7528",
+    "courseCode": "025S03",
+    "lessonCode": "025S03.01",
+    "teacherName": "",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1329522600,
+            "endDate": 1329528300,
+            "name": "\u4fe1\u606f\u68c0\u7d22\u4e0e\u5206\u6790\u5229\u7528",
+            "location": "2506",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1\u5468 2506 :6(1,2)",
+    "credit": 2.5,
+    "additionalInfo": {}
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Notices on Life@USTC web</title><link>https://static.xzkd.online/rss/life_at_ustc.xml</link><description></description><lastBuildDate>Fri, 06 Oct 2023 15:49:20 +0800</lastBuildDate><item><title>关于迁移到「学在科大」的通知</title><link>https://life-ustc.tiankaima.dev/notices/migrate_to_xzkd/</link><description>TL;DR
+在NIC（网络信息中心）的建议与协调下，原「Life@USTC」应用将并入「学在科大」，替代原有「学在科大」的iOS版本，项目组成员将维护「学在科大」的iOS版本，原「Life@USTC」将不再更新。
+新的 TestFlight 测试链接 https://testflight.apple.com/join/EDiz9kt3 Requirements:
+iOS 16.0+ 测试用QQ群：791050174 原「Life@USTC」善后 iOS app App Store上应用将会做下架处理
+原TestFlight测试链接将会失效 相关域名life-
+ustc.tiankaima.dev会至少维持解析90天，此后不再承诺维护，届时应用内部分逻辑可能出现错误 OSS
+位于https://github.com/life-ustc/life-
+ustc的项目代码将会Archive，在NIC的要求下，有关学校的逻辑不能公开提供，在此表示抱歉。
+后续「学在科大」将会开源不含学校相关业务逻辑的代码，并将这部分逻辑以binary的形式分发。
+
+</description><pubDate>Fri, 06 Oct 2023 15:49:20 +0800</pubDate></item><item><title>写给LaTeX用户的Typst入门</title><link>https://life-ustc.tiankaima.dev/notices/typst_for_latex/</link><description>原文地址：Guide for LaTeX users – Typst Documentation
+这篇文章是写给那些已经使用过LaTeX，并想要尝试Typst的用户。 我们将从用户的角度出发，解释这两套系统之间主要的不同。
+虽然Typst并不是基于LaTeX构建的，语法也完全不同，但通过这篇文章，你可以了解如何把LaTeX的经验转化过来。
+跟LaTeX一样，Typst是一门基于标记的排版系统[1]。首先在纯文本里编写自己的文档，然后通过一些命令和语法对其进行修饰，最后使用编译器将源文件排版成PDF。在以下几个方面，Typst跟LaTeX之间也存在区别：
+日常任务上，Typst使用更为专用的语法 ：这一点类比Markdown。 Typst的命令也更有「原则性」
+：在LaTeX中，你可能需要为不同软件包学习不同的语法和约定，但在Typst中命令都保持一致，所以你只需要理解一些基本的概念。 Typst比LaTeX快得多
+：Typst的编译通常只需要几毫秒而不是几秒，因此编译器都可以提供更加迅速的预览。 在接下来的部分，我们将回答从LaTeX切换到Typst的一些常见问题。
+怎样创建一个新的、空的文档？ 很简单，你只需要创建一个空的文本文档（文件后缀是.typ）， 无需额外的模板，你可以直接开始编写。
+换行符和LaTeX保持一致，空白一行即可： 怎样创建段落标题、强调……？
+LaTeX使用命令\section来创建段落标题，多级标题分别使用\subsection，\subsubsection
+等，根据文档种类的不同，还有\part和\chapter
+在Typst中，标题显得没那么啰嗦，在含有标题的那行，前面加上等号和空格，你就得到了一个第一级标题：= Introduction。
+如果需要二级标题，就只需要两个等号== In this paper。 通过在前面加上等号，你可以嵌套任意层级的标题。 译者注：
+这一点上更接近Markdown中#的作用，在接下来的阅读中你会不断看到这种「Markdown+LaTeX」杂糅的产物，结合这两者分别的痛点，可以更加深入了解Typst设计这些语法的原因。
+斜体 只需要把文本包含在_下划线_ 中 粗体 则需要包含在*星号* 之中。 以下是一些常用的标记命令，分别是LaTeX和对应的Typst语法： LaTeX
+Typst 加粗 \textbf{strong} _strong_ 斜体 \emph{emphasis} _emphasis_ 行内代码
+\texttt{print(1)} `print(1)` 链接 \url{https://typst.app} https://typst.app 标签
+\label{intro} &lt;intro&gt; 引用 \ref{intro} @intro 引文 \cite{humphrey97} @humphrey97
+无序列表 itemize \\- List 有序列表 enumerate \\+ List 术语表 description / Term: List 图表
+figure #figure 表 table #table 公式 $x$ align/equation $x$, $ x = y $
+在Typst中使用列表并不需要环境，而使用一种更为轻量的语法。 只需要在每行开头前使用连字符，就可以创建一个无序列表：
+
+</description><pubDate>Sat, 02 Sep 2023 19:14:33 +0800</pubDate></item><item><title>关于科大网络设施的整理</title><link>https://life-ustc.tiankaima.dev/notices/ustc_websites/</link><description>本文部分参考自 zzh1996/USTC-Network-Resources (MIT License)，表示感谢。 前言
+写在新生开学之前，整理下常用的网络设置，以及一些常用的网站/App等，供新同学参考。
+值得注意的是，这里面大部分内容均应该在报到后，在校内进行申请/设置，未报到的新生可能无法正确开通网络通。 文章内容可能过时，如遇问题请邮件咨询网络信息中心
+Warning: 请务必妥善保管自己的邮箱密码 &amp;
+统一身份认证密码，使用更强的密码、减少重复使用密码的次数，并尽可能使用密码管理器等来保障自己学校账户的安全。
+就在过去的一年里，已经看到至少三位同学被“开盒”出来，严重的甚至被攻击者在教务系统上放弃了成绩，请务必认真看待账户的安全性问题。 针对新生
+请先按照录取通知书/班级群/2023级新生群等渠道的要求，在迎新网上注册，地址在https://welcome.ustc.edu.cn/，并在这里进行注册网络通/邮箱等账户
+https://zczx.ustc.edu.cn/ 提交申请、交作业、联系助教、接受教秘、班主任通知等均需使用邮箱，注册邮箱名时尽量谨慎，推荐汉语拼音。
+请注意，在完成以上所有设置（部分请等到报到后完成），以下内容应当设置完成： 统一身份认证（微信/用户名&amp;密码）
+邮箱（xxx@mail.ustc.edu.cn） 网络通账户 后两者请在https://zczx.ustc.edu.cn/accounts 查看。
+Warning: 再次强调安全问题，请认真看待： 注册所用手机号的安全性 统一身份认证微信的安全性 统一身份认证的用户名密码 邮箱账户密码 注意：
+统一身份认证或邮箱密码忘记时，均可互相找回，这也意味着两者泄露一个等于全部泄露 两者均忘记时，可通过手机短信重置密码
+如果手机短信仍不可用，请线下前往网络中心办理 校园网 网络通 接入学校网络时，必须使用网络通才可以访问校外的互联网。地址在
+http://wlt.ustc.edu.cn。 网络通同一时间只能在一处登录，不能多台设备共用。eduroam
+可以任意多台设备同时使用，和网络通登录是不冲突的，eduroam 也可以通过访问网络通页面来更改出口。 关于出口选择： 看文献选 1 号出口（教育网）
+下载东西选 9 号出口（不限 p2p）
+完整的解释在：http://wlt.ustc.edu.cn/link.html，教育网方向不走NAT，接受传入连接，但常用端口80 443 8000
+8080等一般来说无法访问。 常用如下四个SSID： ustc-guest 连接后需要设置：手机短信登陆 无需网络通 免费 完整的外部访问
+elearning 连接后无需设置 无需网络通 免费 完整的外部访问 在中区开放的校园网，唯一的缺陷就是也许只能在中区寝室使用，并且有可能随时关闭的风险
+ustcnet 连接后需要设置：每次均需登陆网络通 需要网络通 教育网出口免费，校外需收费 完整的外部访问（付费）
+打开任意校外网页（http）会自动进行跳转，但直接使用手机App等仍需先设置
+
+</description><pubDate>Sun, 20 Aug 2023 16:23:50 +0800</pubDate></item><item><title>关于科大各微信公众号RSS的说明</title><link>https://life-ustc.tiankaima.dev/notices/ustc_rss/</link><description>为方便使用，封装了科大各个微信公众号的RSS，供大家使用。 以下是所有的常用的消息源的RSS：
+校主页：https://www.ustc.edu.cn/system/resource/code/rss/rssfeedg.jsp?type=list&amp;treeid=1002&amp;viewid=249541&amp;mode=10&amp;dbname=vsb&amp;owner=1585251974&amp;contentid=221571,221572,221573,221574
+教务处：https://www.teach.ustc.edu.cn/category/notice/feed
+中国科学技术大学（公众号）：https://rss-cdn.tiankaima.dev/xml/mp_ustc_main.xml
+研究生会（公众号）：https://rss-cdn.tiankaima.dev/xml/mp_ustc_graduate_student_union.xml
+青春科大（公众号）：https://rss-cdn.tiankaima.dev/xml/mp_ustc_youth_league_committee.xml
+本科招生（公众号）：https://rss-
+cdn.tiankaima.dev/xml/mp_ustc_undergraduate_admission_office.xml
+少年班学院（公众号）：https://rss-cdn.tiankaima.dev/xml/mp_ustc_sgy.xml
+校学生会（公众号）：https://rss-
+cdn.tiankaima.dev/xml/mp_ustc_undergraduate_student_union.xml 本站的RSS：
+应用通知：https://life-ustc.tiankaima.dev/notices/index.xml
+微信公众号由WeRSS实现，我们缓存了它的CDN，并用自己的腾讯云CDN加速，以提高访问速度。请勿使用原链接，减轻WeRSS源站的压力。
+
+</description><pubDate>Mon, 05 Jun 2023 20:16:50 +0800</pubDate></item><item><title>关于测试用QQ群的说明</title><link>https://life-ustc.tiankaima.dev/notices/beta_testing/</link><description>最近新建了一个测试用的QQ群，791050174，Bug Report和Feature
+Request都可以提，最新的TestFlight地址也都会发在群里。 其实我还是喜欢Discord的，奈何Discord的用户量在国内实在是太少了，妥协。
+提醒一下可能影响体验的Bug：
+考试界面（预览、小组件、详情页都算上）有概率因为网络问题而被清空。如果你的考试界面一干二净··，关掉后台重开一下，实在不行进详情页手动刷新一下。
+实际上是因为我没找到考试的API，于是就从获取到的html里解析出来的考试信息，他被清空不是异常，而是他真的认为你没有考试。 可能也很好修……
+不过最近学业压力不小，最近更新的可能不会很频繁，注意一下上述问题不要耽误考试就好。 以上。
+
+</description><pubDate>Tue, 16 May 2023 19:53:11 +0800</pubDate></item><item><title>关于TPNS使用的说明</title><link>https://life-ustc.tiankaima.dev/notices/tpns_info/</link><description>最近的几次commit中，我们向当前版本添加了后台消息推送的功能，这里简单说明一下我们使用的TPNS的情况。
+为了集成消息通知（算是一个相对来说比较重要的功能了），前期我们做了很多尝试，之前自己写的后端来接受APN Token
+然后定时任务推送的尝试最终以失败告终。商用的服务在这方面非常成熟（我们当然也知道有开源的推送服务后端，但出于安全&amp;部署的考虑，我们还是选择了商用的服务），最终就选择了TPNS。
+TPNS的accessID算是明文，clientKey并没有以任何形式做封装，因为项目的代码主体毕竟开源，通过简单的逆向就可以得到这部分key，所以在我们看没有什么隐藏的必要……
+（同时也不涉及消息发送的部分，也没有内容安全的要求） 关于隐私 TPNS的隐私政策可以在这里找到，
+按照上述隐私政策，存储于Userdefaults(kCFPreferencesAnyUser)部分的应用信息不会被TPNS
+SDK以任何形式收集、处理、分析。用户数据仍保留在本地进行处理，TPNS SDK仅提供消息推送的功能。
+如对上述内容仍存有疑问，可以通过邮件联系我，tiankaima a/t 163 d/o/t com。 关于TPNS Android的使用
+由于采用了商用方案，相关的文档和SDK集成都有着较为规范的流程。同时消息来源方面也无需做二次整合，如果有需要集成消息推送的Android应用，也可通过上述邮箱联系我。
+关于用户使用数据收集、分析的投票 出于接下来开发方向的调研需要，我们将在近期发布一份投票。
+由于应用涉及到相对敏感的个人信息，是否集成数据分析类SDK、SDK的透明度等问题可能会有较大分歧。投票结果将会对接下来的开发方向产生影响，所以希望大家能够积极参与。
+投票地址位于这里。 最后，感谢各位对我们一直以来的支持。
+
+</description><pubDate>Fri, 28 Apr 2023 16:38:15 +0800</pubDate></item><item><title>默认页面</title><link>https://life-ustc.tiankaima.dev/notices/default/</link><description>这是一个默认页面。 呃，我也不清楚这里应该写点什么。总之，当你看到这篇文章的时候，这玩意我应该是设置好了。
+占个位置，以后借着这个工具做点调查？搞点功能反馈之类的？也没太想好，总之戏台先打起来了，一个Hugo的静态gh page。
+就这样。如果有什么想法可以联系我。 话说Hugo真的好随意……date直接用ISO8601的格式……这东西真的稳定吗？
+
+</description><pubDate>Tue, 17 Jan 2023 19:51:33 +0800</pubDate></item></channel></rss>

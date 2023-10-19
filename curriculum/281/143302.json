@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 143302,
+    "name": "\u821e\u8e48\u9274\u8d4f",
+    "courseCode": "HS1599M",
+    "lessonCode": "HS1599M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1668771000,
+            "endDate": 1668779700,
+            "name": "\u821e\u8e48\u9274\u8d4f",
+            "location": "5303",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1669375800,
+            "endDate": 1669384500,
+            "name": "\u821e\u8e48\u9274\u8d4f",
+            "location": "5303",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "12~13\u5468 5303 :5(11,12,13) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}

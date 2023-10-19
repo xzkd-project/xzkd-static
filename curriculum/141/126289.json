@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126289,
+    "name": "\u300a\u8bd7\u7ecf\u300b\u5bfc\u8bfb",
+    "courseCode": "HS1576M",
+    "lessonCode": "HS1576M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1588590000,
+            "endDate": 1588597200,
+            "name": "\u300a\u8bd7\u7ecf\u300b\u5bfc\u8bfb",
+            "location": "5201",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1589194800,
+            "endDate": 1589202000,
+            "name": "\u300a\u8bd7\u7ecf\u300b\u5bfc\u8bfb",
+            "location": "5201",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "12~13\u5468 5201 :1(19:00~21:00) \u6155\u8bfe\u6559\u5e08",
+    "credit": 1,
+    "additionalInfo": {}
+}

@@ -1,0 +1,113 @@
+{
+    "py/object": "models.course.Course",
+    "id": 146430,
+    "name": "\u4e2d\u533b\u5b66",
+    "courseCode": "MED3018",
+    "lessonCode": "MED3018.01",
+    "teacherName": "",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1678578600,
+            "endDate": 1678584300,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A202",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1678600800,
+            "endDate": 1678610400,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A202",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679186400,
+            "endDate": 1679199000,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A203",
+            "teacherName": null,
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679205600,
+            "endDate": 1679218200,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A203",
+            "teacherName": null,
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679225400,
+            "endDate": 1679234100,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A203",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679701800,
+            "endDate": 1679717400,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A202",
+            "teacherName": null,
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679724000,
+            "endDate": 1679729700,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A202",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1679795100,
+            "endDate": 1679803800,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A202",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1680933600,
+            "endDate": 1680939300,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A203",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1681020000,
+            "endDate": 1681025700,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A204",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3\u5468 3A202 :6(1,2,3,4,5)\n3\u5468 3A202 :6(6,7)\n5\u5468 3A203 :6(6,7)\n2\u5468 3A202 :7(1,2)\n3\u5468 3A203 :7(2,3,4,5)\n4\u5468 3A202 :7(3,4,5)\n6\u5468 3A204 :7(6,7)\n2\u5468 3A202 :7(6,7,8)\n3\u5468 3A203 :7(6,7,8,9)\n3\u5468 3A203 :7(11,12,13)",
+    "credit": 2.5,
+    "additionalInfo": {}
+}

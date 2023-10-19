@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 148313,
+    "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+    "courseCode": "PHIL6101U",
+    "lessonCode": "PHIL6101U.42",
+    "teacherName": "\u53f2\u7389\u6c11",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1677976200,
+            "endDate": 1678008600,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c101",
+            "teacherName": "\u53f2\u7389\u6c11",
+            "periods": 10,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1681605000,
+            "endDate": 1681637400,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c101",
+            "teacherName": "\u53f2\u7389\u6c11",
+            "periods": 10,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1,7\u5468 \u56fd\u91d1\u96621\u53f7\u697c101 :7(08:30~17:30) \u53f2\u7389\u6c11",
+    "credit": 1,
+    "additionalInfo": {}
+}
