@@ -48,4 +48,5 @@ jobs:
           git add .
           git commit -m "Update from: ${{ github.sha }}" --allow-empty
           git remote add origin git@github.com:XZKD-Project/xzkd-static.git
+          git config --local gc.auto 0
           (git push -f origin gh-pages) || true
