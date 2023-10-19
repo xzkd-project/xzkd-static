@@ -1,10 +1,10 @@
 import aiohttp
-from datetime import datetime
+
+from models.semester import Semester
+from models.course import Course
 
 from utils.constants import catalog_headers as headers
 from utils.tools import raw_date_to_unix_timestamp
-from models.semester import Semester
-from models.course import Course
 
 
 async def get_token() -> str:

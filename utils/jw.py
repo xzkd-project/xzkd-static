@@ -4,6 +4,7 @@ import aiohttp
 
 from models.course import Course
 from models.lecture import Lecture
+
 from utils.cas import cas_login_data
 from utils.constants import cas_login_headers
 from utils.constants import normal_headers as headers
