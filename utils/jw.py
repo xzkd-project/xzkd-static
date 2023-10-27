@@ -1,5 +1,11 @@
 import re
 
+from io import BytesIO
+from PIL import Image
+import cv2
+import numpy as np
+import pytesseract
+
 import aiohttp
 
 from models.course import Course
@@ -34,13 +40,27 @@ async def login(session: aiohttp.ClientSession):
         allow_redirects=False
     )
     text = await response.text()
-    lt = token_pattern.findall(text)[0]
+    cas_lt = token_pattern.findall(text)[0]
+
+    url = "https://passport.ustc.edu.cn/validatecode.jsp?type=login"
+    response = await session.get(
+        url=url,
+        headers=headers,
+        allow_redirects=False
+    )
+    image = Image.open(BytesIO(await response.read()))
+    image = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
+    kernel = np.ones((3,3), np.uint8)
+    image = cv2.dilate(image, kernel, iterations=1)
+    image = cv2.erode(image, kernel, iterations=1)
+    lt = pytesseract.image_to_string(Image.fromarray(image))[0:4]
+
 
     url = "https://passport.ustc.edu.cn/login"
     response = await session.post(
         url=url,
         headers=cas_login_headers,
-        data=cas_login_data(lt),
+        data=cas_login_data(cas_lt, lt),
         allow_redirects=False
     )
 
