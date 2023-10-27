@@ -15,7 +15,6 @@ def cas_login_data(cas_lt: str, lt: str) -> json:
         "username": USTC_PASSPORT_USERNAME,
         "password": USTC_PASSPORT_PASSWORD,
         "LT": lt,
-        "button": "",
     }
 
 
