@@ -4,7 +4,7 @@
     "name": "\u5927\u5b66\u751f\u5fc3\u7406\u5b66",
     "courseCode": "HS1531",
     "lessonCode": "HS1531.06",
-    "teacherName": "\u5f20\u6548\u521d",
+    "teacherName": "\u5f20\u6548\u521d, \u67e5\u6c5d\u6676",
     "lectures": [
         {
             "py/object": "models.lecture.Lecture",
@@ -88,6 +88,16 @@
         },
         {
             "py/object": "models.lecture.Lecture",
+            "startDate": 1700207700,
+            "endDate": 1700216400,
+            "name": "\u5927\u5b66\u751f\u5fc3\u7406\u5b66",
+            "location": "3C202",
+            "teacherName": "\u67e5\u6c5d\u6676",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
             "startDate": 1700812500,
             "endDate": 1700821200,
             "name": "\u5927\u5b66\u751f\u5fc3\u7406\u5b66",
@@ -127,7 +137,7 @@
             "additionalInfo": {}
         }
     ],
-    "description": "2~3,6~10,12~14\u5468 3C202 :5(8,9,10) \u5f20\u6548\u521d\n15\u5468 \u897f\u533a :5(8,9,10) \u5f20\u6548\u521d\n6\u5468 3C202 :7(8,9,10) \u5f20\u6548\u521d",
+    "description": "2~3,6~10,12~14\u5468 3C202 :5(8,9,10) \u5f20\u6548\u521d\n11\u5468 3C202 :5(8,9,10) \u67e5\u6c5d\u6676\n15\u5468 \u897f\u533a :5(8,9,10) \u5f20\u6548\u521d\n6\u5468 3C202 :7(8,9,10) \u5f20\u6548\u521d",
     "credit": 2,
     "additionalInfo": {}
 }
