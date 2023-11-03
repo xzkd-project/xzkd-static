@@ -158,16 +158,6 @@
         },
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1698975900,
-            "endDate": 1698981600,
-            "name": "\u7535\u5b50\u7cfb\u7edf\u8bbe\u8ba1",
-            "location": "GT-B101",
-            "teacherName": "\u5468\u70fd",
-            "periods": 2,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
             "startDate": 1699336800,
             "endDate": 1699342500,
             "name": "\u7535\u5b50\u7cfb\u7edf\u8bbe\u8ba1",
@@ -185,9 +175,19 @@
             "teacherName": "\u5468\u70fd",
             "periods": 2,
             "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1699941600,
+            "endDate": 1699947300,
+            "name": "\u7535\u5b50\u7cfb\u7edf\u8bbe\u8ba1",
+            "location": "GT-B101",
+            "teacherName": "\u5468\u70fd",
+            "periods": 2,
+            "additionalInfo": {}
         }
     ],
-    "description": "1~4,6~10\u5468 GT-B101 :2(6,7) \u5468\u70fd\n1~3,6~10\u5468 GT-B101 :5(3,4) \u5468\u70fd\n6\u5468 GT-B101 :7(3,4) \u5468\u70fd",
+    "description": "1~4,6~11\u5468 GT-B101 :2(6,7) \u5468\u70fd\n1~3,6~8,10\u5468 GT-B101 :5(3,4) \u5468\u70fd\n6\u5468 GT-B101 :7(3,4) \u5468\u70fd",
     "credit": 2.5,
     "additionalInfo": {}
 }
