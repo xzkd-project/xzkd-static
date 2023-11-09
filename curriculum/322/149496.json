@@ -348,46 +348,6 @@
         },
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1699833000,
-            "endDate": 1699838700,
-            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
-            "location": "3A212",
-            "teacherName": "\u90d1\u575a",
-            "periods": 2,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1699833000,
-            "endDate": 1699838700,
-            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
-            "location": "3A212",
-            "teacherName": "\u674e\u4fca",
-            "periods": 2,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1700012700,
-            "endDate": 1700021400,
-            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
-            "location": "3A212",
-            "teacherName": "\u90d1\u575a",
-            "periods": 3,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1700012700,
-            "endDate": 1700021400,
-            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
-            "location": "3A212",
-            "teacherName": "\u674e\u4fca",
-            "periods": 3,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
             "startDate": 1700437800,
             "endDate": 1700443500,
             "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
@@ -428,6 +388,26 @@
         },
         {
             "py/object": "models.lecture.Lecture",
+            "startDate": 1700898900,
+            "endDate": 1700904600,
+            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
+            "location": "3A212",
+            "teacherName": "\u90d1\u575a",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1700898900,
+            "endDate": 1700904600,
+            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
+            "location": "3A212",
+            "teacherName": "\u674e\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
             "startDate": 1701042600,
             "endDate": 1701048300,
             "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
@@ -460,6 +440,26 @@
             "py/object": "models.lecture.Lecture",
             "startDate": 1701222300,
             "endDate": 1701231000,
+            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
+            "location": "3A212",
+            "teacherName": "\u674e\u4fca",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1701499800,
+            "endDate": 1701509400,
+            "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
+            "location": "3A212",
+            "teacherName": "\u90d1\u575a",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1701499800,
+            "endDate": 1701509400,
             "name": "\u60ef\u6027\u7ea6\u675f\u805a\u53d8\u7269\u7406",
             "location": "3A212",
             "teacherName": "\u674e\u4fca",
@@ -627,7 +627,7 @@
             "additionalInfo": {}
         }
     ],
-    "description": "2~4,6~8,10~17\u5468 3A212 :1(1,2) \u90d1\u575a\n2~4,6~8,10~17\u5468 3A212 :1(1,2) \u674e\u4fca\n2~4,6~17\u5468 3A212 :3(3,4,5) \u90d1\u575a\n2~4,6~17\u5468 3A212 :3(3,4,5) \u674e\u4fca\n5\u5468 3A212 :6(1,2) \u90d1\u575a\n5\u5468 3A212 :6(1,2) \u674e\u4fca\n9\u5468 3A212 :6(3,4) \u90d1\u575a\n9\u5468 3A212 :6(3,4) \u674e\u4fca",
+    "description": "2~4,6~8,10~12(\u53cc),13~17\u5468 3A212 :1(1,2) \u90d1\u575a\n2~4,6~8,10~12(\u53cc),13~17\u5468 3A212 :1(1,2) \u674e\u4fca\n2~4,6~10,12~17\u5468 3A212 :3(3,4,5) \u90d1\u575a\n2~4,6~10,12~17\u5468 3A212 :3(3,4,5) \u674e\u4fca\n5\u5468 3A212 :6(1,2) \u90d1\u575a\n5\u5468 3A212 :6(1,2) \u674e\u4fca\n9\u5468 3A212 :6(3,4) \u90d1\u575a\n9\u5468 3A212 :6(3,4) \u674e\u4fca\n13\u5468 3A212 :6(7,8,9) \u90d1\u575a\n13\u5468 3A212 :6(7,8,9) \u674e\u4fca\n12\u5468 3A212 :6(8,9) \u90d1\u575a\n12\u5468 3A212 :6(8,9) \u674e\u4fca",
     "credit": 4,
     "additionalInfo": {}
 }

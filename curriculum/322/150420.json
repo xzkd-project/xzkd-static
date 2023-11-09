@@ -168,16 +168,6 @@
         },
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1699494300,
-            "endDate": 1699503000,
-            "name": "\u7a7a\u95f4\u63a2\u6d4b\u4eea\u5668\u539f\u7406\u4e0e\u65b9\u6cd5",
-            "location": "2302",
-            "teacherName": "\u859b\u5411\u8f89",
-            "periods": 3,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
             "startDate": 1699941600,
             "endDate": 1699947300,
             "name": "\u7a7a\u95f4\u63a2\u6d4b\u4eea\u5668\u539f\u7406\u4e0e\u65b9\u6cd5",
@@ -245,9 +235,19 @@
             "teacherName": "\u859b\u5411\u8f89",
             "periods": 2,
             "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1701913500,
+            "endDate": 1701922200,
+            "name": "\u7a7a\u95f4\u63a2\u6d4b\u4eea\u5668\u539f\u7406\u4e0e\u65b9\u6cd5",
+            "location": "2302",
+            "teacherName": "\u859b\u5411\u8f89",
+            "periods": 3,
+            "additionalInfo": {}
         }
     ],
-    "description": "1~4,6~8(\u53cc),9~14\u5468 2302 :2(6,7) \u859b\u5411\u8f89\n1~4,6~13\u5468 2302 :4(3,4,5) \u859b\u5411\u8f89",
+    "description": "1~4,6~8(\u53cc),9~14\u5468 2302 :2(6,7) \u859b\u5411\u8f89\n1~4,6~9,11~14\u5468 2302 :4(3,4,5) \u859b\u5411\u8f89",
     "credit": 3,
     "additionalInfo": {}
 }
