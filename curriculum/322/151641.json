@@ -862,16 +862,6 @@
             "endDate": 1700724900,
             "name": "\u50ac\u5316\u5316\u5b66",
             "location": "2205",
-            "teacherName": "\u9ec4\u4f1f\u65b0",
-            "periods": 2,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1700719200,
-            "endDate": 1700724900,
-            "name": "\u50ac\u5316\u5316\u5b66",
-            "location": "2205",
             "teacherName": "\u5343\u5764",
             "periods": 2,
             "additionalInfo": {}
@@ -923,6 +913,16 @@
             "name": "\u50ac\u5316\u5316\u5b66",
             "location": "2205",
             "teacherName": "\u4e25\u6b22",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1701158100,
+            "endDate": 1701163800,
+            "name": "\u50ac\u5316\u5316\u5b66",
+            "location": "2303",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
             "periods": 2,
             "additionalInfo": {}
         },
@@ -1367,7 +1367,7 @@
             "additionalInfo": {}
         }
     ],
-    "description": "1~4,6~18\u5468 2205 :2(6,7) \u90b5\u7fd4\n1~4,6~18\u5468 2205 :2(6,7) \u9ec4\u4f1f\u65b0\n1~4,6~18\u5468 2205 :2(6,7) \u5343\u5764\n1~4,6~18\u5468 2205 :2(6,7) \u4e25\u6b22\n1~4,6~18\u5468 2205 :4(6,7) \u90b5\u7fd4\n1~4,6~18\u5468 2205 :4(6,7) \u9ec4\u4f1f\u65b0\n1~4,6~18\u5468 2205 :4(6,7) \u5343\u5764\n1~4,6~18\u5468 2205 :4(6,7) \u4e25\u6b22",
+    "description": "1~4,6~18\u5468 2205 :2(6,7) \u90b5\u7fd4\n1~4,6~18\u5468 2205 :2(6,7) \u9ec4\u4f1f\u65b0\n1~4,6~18\u5468 2205 :2(6,7) \u5343\u5764\n1~4,6~18\u5468 2205 :2(6,7) \u4e25\u6b22\n13\u5468 2303 :2(8,9) \u9ec4\u4f1f\u65b0\n1~4,6~18\u5468 2205 :4(6,7) \u90b5\u7fd4\n1~4,6~11,13~18\u5468 2205 :4(6,7) \u9ec4\u4f1f\u65b0\n1~4,6~18\u5468 2205 :4(6,7) \u5343\u5764\n1~4,6~18\u5468 2205 :4(6,7) \u4e25\u6b22",
     "credit": 4,
     "additionalInfo": {}
 }
