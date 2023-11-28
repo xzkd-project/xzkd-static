@@ -98,16 +98,6 @@
         },
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1699855200,
-            "endDate": 1699867800,
-            "name": "\u96f7\u7535\u7269\u7406\u548c\u96f7\u7535\u6c14\u8c61\u5b66",
-            "location": "2305",
-            "teacherName": "\u9646\u9ad8\u9e4f",
-            "periods": 4,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
             "startDate": 1700460000,
             "endDate": 1700472600,
             "name": "\u96f7\u7535\u7269\u7406\u548c\u96f7\u7535\u6c14\u8c61\u5b66",
@@ -118,10 +108,20 @@
         },
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1701064800,
-            "endDate": 1701077400,
+            "startDate": 1700613600,
+            "endDate": 1700626200,
             "name": "\u96f7\u7535\u7269\u7406\u548c\u96f7\u7535\u6c14\u8c61\u5b66",
-            "location": "2305",
+            "location": "\u5730\u7a7a\u697c1218\u4f1a\u8bae\u5ba4",
+            "teacherName": "\u9646\u9ad8\u9e4f",
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1701218400,
+            "endDate": 1701231000,
+            "name": "\u96f7\u7535\u7269\u7406\u548c\u96f7\u7535\u6c14\u8c61\u5b66",
+            "location": "\u5730\u7a7a\u697c1218\u4f1a\u8bae\u5ba4",
             "teacherName": "\u9646\u9ad8\u9e4f",
             "periods": 4,
             "additionalInfo": {}
@@ -157,7 +157,7 @@
             "additionalInfo": {}
         }
     ],
-    "description": "2~4,6~8(\u53cc),9~16\u5468 2305 :1(6,7,8,9) \u9646\u9ad8\u9e4f\n6\u5468 \u5730\u7a7a\u697c1218\u4f1a\u8bae\u5ba4 :3(2,3,4,5) \u9646\u9ad8\u9e4f\n8\u5468 \u5730\u7a7a\u884c\u653f\u697c1218\u4f1a\u8bae\u5ba4 :3(2,3,4,5) \u9646\u9ad8\u9e4f",
+    "description": "2~4,6~8(\u53cc),9~10,12~14(\u53cc),15~16\u5468 2305 :1(6,7,8,9) \u9646\u9ad8\u9e4f\n6,12~13\u5468 \u5730\u7a7a\u697c1218\u4f1a\u8bae\u5ba4 :3(2,3,4,5) \u9646\u9ad8\u9e4f\n8\u5468 \u5730\u7a7a\u884c\u653f\u697c1218\u4f1a\u8bae\u5ba4 :3(2,3,4,5) \u9646\u9ad8\u9e4f",
     "credit": 3,
     "additionalInfo": {}
 }
