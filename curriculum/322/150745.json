@@ -128,6 +128,16 @@
         },
         {
             "py/object": "models.lecture.Lecture",
+            "startDate": 1701756000,
+            "endDate": 1701765600,
+            "name": "\u56fd\u9645\u79c1\u6cd5\u5b66",
+            "location": "2404",
+            "teacherName": "\u8d75\u53cc\u53cc",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
             "startDate": 1701928800,
             "endDate": 1701938400,
             "name": "\u56fd\u9645\u79c1\u6cd5\u5b66",
@@ -135,19 +145,9 @@
             "teacherName": "\u8d75\u53cc\u53cc",
             "periods": 3,
             "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1702533600,
-            "endDate": 1702543200,
-            "name": "\u56fd\u9645\u79c1\u6cd5\u5b66",
-            "location": "2407",
-            "teacherName": "\u8d75\u53cc\u53cc",
-            "periods": 3,
-            "additionalInfo": {}
         }
     ],
-    "description": "13\u5468 2404 :2(6,7,8) \u8d75\u53cc\u53cc\n1~3,6~11,13~15\u5468 2407 :4(6,7,8) \u8d75\u53cc\u53cc\n7\u5468 2407 :4(10,11,12) \u8d75\u53cc\u53cc",
+    "description": "13~14\u5468 2404 :2(6,7,8) \u8d75\u53cc\u53cc\n1~3,6~11,13~14\u5468 2407 :4(6,7,8) \u8d75\u53cc\u53cc\n7\u5468 2407 :4(10,11,12) \u8d75\u53cc\u53cc",
     "credit": 2,
     "additionalInfo": {}
 }
