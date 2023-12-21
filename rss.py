@@ -26,22 +26,25 @@ async def get_and_clean_feed(url: str, path_to_save: str):
     handler.ignore_images = True
 
     for entry in tqdm(feed.entries):
-        date_raw = entry.published
         try:
-            # Tue, 10 Aug 2021 00:00:00 GMT
-            date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %Z")
-        except ValueError:
-            # Tue, 10 Aug 2021 00:00:00 +0800
-            date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %z")
+            date_raw = entry.published
+            try:
+                # Tue, 10 Aug 2021 00:00:00 GMT
+                date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %Z")
+            except ValueError:
+                # Tue, 10 Aug 2021 00:00:00 +0800
+                date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %z")
 
-        description = handler.handle(entry.description)
+            description = handler.handle(entry.description)
 
-        new_feed.add_item(
-            title=entry.title,
-            link=entry.link,
-            description=description,
-            pubdate=date
-        )
+            new_feed.add_item(
+                title=entry.title,
+                link=entry.link,
+                description=description,
+                pubdate=date
+            )
+        except Exception as e:
+            print(e)
 
     with open(path_to_save, 'w') as f:
         new_feed.write(f, 'utf-8')
