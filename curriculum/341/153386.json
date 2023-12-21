@@ -4,7 +4,7 @@
     "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
     "courseCode": "019029",
     "lessonCode": "019029.01",
-    "teacherName": "\u5b59\u6674, \u6768\u51ef\u5e73, \u80e1\u4e07\u7fa4, \u76db\u7fd4, \u90b5\u4f1f, \u674e\u7ef4\u7ef4, \u5f20\u4e07\u7fa4, \u5218\u65af",
+    "teacherName": "\u5b59\u6674, \u6768\u51ef\u5e73, \u80e1\u4e07\u7fa4, \u76db\u7fd4, \u90b5\u4f1f, \u674e\u7ef4\u7ef4, \u5f20\u4e07\u7fa4, \u5218\u65af, \u5468\u5f3a",
     "lectures": [
         {
             "py/object": "models.lecture.Lecture",
@@ -1002,16 +1002,6 @@
             "endDate": 1717490400,
             "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
             "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
-            "teacherName": "\u5f20\u4e07\u7fa4",
-            "periods": 3,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1717480800,
-            "endDate": 1717490400,
-            "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
-            "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
             "teacherName": "\u674e\u7ef4\u7ef4",
             "periods": 3,
             "additionalInfo": {}
@@ -1033,6 +1023,16 @@
             "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
             "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
             "teacherName": "\u5b59\u6674",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1717480800,
+            "endDate": 1717490400,
+            "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
+            "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
+            "teacherName": "\u5468\u5f3a",
             "periods": 3,
             "additionalInfo": {}
         },
@@ -1082,16 +1082,6 @@
             "endDate": 1718095200,
             "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
             "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
-            "teacherName": "\u5f20\u4e07\u7fa4",
-            "periods": 3,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1718085600,
-            "endDate": 1718095200,
-            "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
-            "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
             "teacherName": "\u674e\u7ef4\u7ef4",
             "periods": 3,
             "additionalInfo": {}
@@ -1122,12 +1112,22 @@
             "endDate": 1718095200,
             "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
             "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
+            "teacherName": "\u5468\u5f3a",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1718085600,
+            "endDate": 1718095200,
+            "name": "\u4eea\u5668\u5206\u6790\u5b9e\u9a8c",
+            "location": "\u4e1c\u533a\u73af\u8d44\u697c403-404",
             "teacherName": "\u5218\u65af",
             "periods": 3,
             "additionalInfo": {}
         }
     ],
-    "description": "3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u76db\u7fd4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u6768\u51ef\u5e73\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u80e1\u4e07\u7fa4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5f20\u4e07\u7fa4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u674e\u7ef4\u7ef4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u90b5\u4f1f\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5b59\u6674\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5218\u65af",
+    "description": "3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u76db\u7fd4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u6768\u51ef\u5e73\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u80e1\u4e07\u7fa4\n3~14\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5f20\u4e07\u7fa4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u674e\u7ef4\u7ef4\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u90b5\u4f1f\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5b59\u6674\n3~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5218\u65af\n15~16\u5468 \u4e1c\u533a\u73af\u8d44\u697c403-404 :2(6,7,8) \u5468\u5f3a",
     "credit": 1,
     "additionalInfo": {}
 }

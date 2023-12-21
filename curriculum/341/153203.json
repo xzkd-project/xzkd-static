@@ -4,20 +4,30 @@
     "name": "\u4e2d\u533b\u5b66",
     "courseCode": "MED3018",
     "lessonCode": "MED3018.01",
-    "teacherName": "\u5b87\u6c5d\u7fe0",
+    "teacherName": "\u5434\u98a2\u6615, \u5f90\u5efa\u4e91, \u738b\u5149\u8000, \u9a86\u6b8a, \u94b1\u5cfb, \u5f90\u5f81, \u5218\u654f, \u5f20\u536b\u534e, \u7a0b\u6d01, \u9646\u667a\u6167, \u6768\u5e7f\u5c71, \u5b87\u6c5d\u7fe0, \u5218\u7559\u7559",
     "lectures": [
         {
             "py/object": "models.lecture.Lecture",
-            "startDate": 1709337000,
-            "endDate": 1709342700,
+            "startDate": 1710633000,
+            "endDate": 1710638700,
             "name": "\u4e2d\u533b\u5b66",
             "location": "3A201",
-            "teacherName": "\u5b87\u6c5d\u7fe0",
+            "teacherName": "\u5434\u98a2\u6615",
             "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710655200,
+            "endDate": 1710664800,
+            "name": "\u4e2d\u533b\u5b66",
+            "location": "3A201",
+            "teacherName": "\u5f90\u5efa\u4e91",
+            "periods": 3,
             "additionalInfo": {}
         }
     ],
-    "description": "1\u5468 3A201 :6(1,2) \u5b87\u6c5d\u7fe0",
+    "description": "4\u5468 3A201 :7(1,2) \u5434\u98a2\u6615",
     "credit": 2.5,
     "additionalInfo": {}
 }
