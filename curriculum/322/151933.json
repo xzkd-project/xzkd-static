@@ -4,7 +4,7 @@
     "name": "\u751f\u7269\u5316\u5b66\u4e0e\u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c\u539f\u7406I",
     "courseCode": "BIOL6051P",
     "lessonCode": "BIOL6051P.05",
-    "teacherName": "\u718a\u82f1, \u6c5f\u6c38\u4eae, \u6731\u6d2a\u5f71, \u4f58\u7ee7, \u77f3\u6500, \u4faf\u6587\u97ec",
+    "teacherName": "\u7279\u9080\u6559\u5e08, \u718a\u82f1, \u6c5f\u6c38\u4eae, \u6731\u6d2a\u5f71, \u4f58\u7ee7, \u77f3\u6500, \u4faf\u6587\u97ec",
     "lectures": [
         {
             "py/object": "models.lecture.Lecture",
@@ -848,6 +848,16 @@
         },
         {
             "py/object": "models.lecture.Lecture",
+            "startDate": 1703656800,
+            "endDate": 1703662500,
+            "name": "\u751f\u7269\u5316\u5b66\u4e0e\u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c\u539f\u7406I",
+            "location": "3A111",
+            "teacherName": "\u7279\u9080\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
             "startDate": 1703743200,
             "endDate": 1703748900,
             "name": "\u751f\u7269\u5316\u5b66\u4e0e\u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c\u539f\u7406I",
@@ -863,16 +873,6 @@
             "name": "\u751f\u7269\u5316\u5b66\u4e0e\u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c\u539f\u7406I",
             "location": "3A211",
             "teacherName": "\u6c5f\u6c38\u4eae",
-            "periods": 2,
-            "additionalInfo": {}
-        },
-        {
-            "py/object": "models.lecture.Lecture",
-            "startDate": 1703743200,
-            "endDate": 1703748900,
-            "name": "\u751f\u7269\u5316\u5b66\u4e0e\u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c\u539f\u7406I",
-            "location": "3A211",
-            "teacherName": "\u6731\u6d2a\u5f71",
             "periods": 2,
             "additionalInfo": {}
         },
@@ -967,7 +967,7 @@
             "additionalInfo": {}
         }
     ],
-    "description": "2~4,6~18\u5468 3A211 :4(6,7) \u718a\u82f1\n2~4,6~18\u5468 3A211 :4(6,7) \u6c5f\u6c38\u4eae\n2~4,6~18\u5468 3A211 :4(6,7) \u6731\u6d2a\u5f71\n2~4,6~18\u5468 3A211 :4(6,7) \u4f58\u7ee7\n2~4,6~18\u5468 3A211 :4(6,7) \u4faf\u6587\u97ec\n2~4,6~18\u5468 3A211 :4(6,7) \u77f3\u6500",
+    "description": "17\u5468 3A111 :3(6,7) \u7279\u9080\u6559\u5e08\n2~4,6~18\u5468 3A211 :4(6,7) \u718a\u82f1\n2~4,6~18\u5468 3A211 :4(6,7) \u6c5f\u6c38\u4eae\n2~4,6~16,18\u5468 3A211 :4(6,7) \u6731\u6d2a\u5f71\n2~4,6~18\u5468 3A211 :4(6,7) \u4f58\u7ee7\n2~4,6~18\u5468 3A211 :4(6,7) \u4faf\u6587\u97ec\n2~4,6~18\u5468 3A211 :4(6,7) \u77f3\u6500",
     "credit": 2,
     "additionalInfo": {}
 }
