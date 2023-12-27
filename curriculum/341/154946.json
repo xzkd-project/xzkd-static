@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 154946,
+    "name": "\u539f\u6765\u59f9\u7d2b\u5ae3\u7ea2\u5f00\u904d\u2014\u2014\u6606\u66f2\u827a\u672f\u6b23\u8d4f",
+    "courseCode": "HS1646M",
+    "lessonCode": "HS1646M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710223200,
+            "endDate": 1710228900,
+            "name": "\u539f\u6765\u59f9\u7d2b\u5ae3\u7ea2\u5f00\u904d\u2014\u2014\u6606\u66f2\u827a\u672f\u6b23\u8d4f",
+            "location": "3A112",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1717480800,
+            "endDate": 1717486500,
+            "name": "\u539f\u6765\u59f9\u7d2b\u5ae3\u7ea2\u5f00\u904d\u2014\u2014\u6606\u66f2\u827a\u672f\u6b23\u8d4f",
+            "location": "3A112",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3,15\u5468 3A112 :2(6,7) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}
