@@ -1,0 +1,63 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155212,
+    "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+    "courseCode": "PHIL6101U",
+    "lessonCode": "PHIL6101U.35",
+    "teacherName": "\u6d2a\u8fdb",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710031200,
+            "endDate": 1710043800,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u6d2a\u8fdb",
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710050400,
+            "endDate": 1710063000,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u6d2a\u8fdb",
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711240800,
+            "endDate": 1711253400,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u6d2a\u8fdb",
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711260000,
+            "endDate": 1711272600,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u6d2a\u8fdb",
+            "periods": 4,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1713074400,
+            "endDate": 1713087000,
+            "name": "\u81ea\u7136\u8fa9\u8bc1\u6cd5\u6982\u8bba",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u6d2a\u8fdb",
+            "periods": 4,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3~5(\u5355)\u5468 \u56fd\u91d1\u96625#101 :7(2,3,4,5) \u6d2a\u8fdb\n3~5(\u5355),8\u5468 \u56fd\u91d1\u96625#101 :7(6,7,8,9) \u6d2a\u8fdb",
+    "credit": 1,
+    "additionalInfo": {}
+}
