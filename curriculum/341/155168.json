@@ -5,7 +5,38 @@
     "courseCode": "FS1001",
     "lessonCode": "FS1001.CI",
     "teacherName": "\u5218\u884c",
-    "lectures": [],
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709551800,
+            "endDate": 1709557500,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A103",
+            "teacherName": "\u5218\u884c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1712575800,
+            "endDate": 1712581500,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A103",
+            "teacherName": "\u5218\u884c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1715599800,
+            "endDate": 1715605500,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A103",
+            "teacherName": "\u5218\u884c",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
     "description": null,
     "credit": 1,
     "additionalInfo": {}
