@@ -1,0 +1,23 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126441,
+    "name": "\u7f51\u7edc\u53ca\u591a\u5a92\u4f53\u6280\u672f",
+    "courseCode": "GX05101",
+    "lessonCode": "GX05101.01",
+    "teacherName": "\u5218\u6d77\u6e05",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1567381800,
+            "endDate": 1567387500,
+            "name": "\u7f51\u7edc\u53ca\u591a\u5a92\u4f53\u6280\u672f",
+            "location": "1101",
+            "teacherName": "\u5218\u6d77\u6e05",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1\u5468 1101 :1(1,2) \u5218\u6d77\u6e05",
+    "credit": 0.5,
+    "additionalInfo": {}
+}

@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126363,
+    "name": "\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6",
+    "courseCode": "G430140206",
+    "lessonCode": "G430140206.01",
+    "teacherName": "\u67e5\u52c7",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1592008800,
+            "endDate": 1592041800,
+            "name": "\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6",
+            "location": "\u7ba1\u7406\u79d1\u7814\u697c801",
+            "teacherName": "\u67e5\u52c7",
+            "periods": 20,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1592095200,
+            "endDate": 1592128200,
+            "name": "\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6",
+            "location": "\u7ba1\u7406\u79d1\u7814\u697c801",
+            "teacherName": "\u67e5\u52c7",
+            "periods": 20,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "17\u5468 \u7ba1\u7406\u79d1\u7814\u697c801 :6(08:40~17:50) \u67e5\u52c7\n18\u5468 \u7ba1\u7406\u79d1\u7814\u697c801 :7(08:40~17:50) \u67e5\u52c7",
+    "credit": 2,
+    "additionalInfo": {}
+}

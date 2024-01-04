@@ -1,0 +1,73 @@
+{
+    "py/object": "models.course.Course",
+    "id": 84310,
+    "name": "\u751f\u7269\u6750\u6599",
+    "courseCode": "CH55225",
+    "lessonCode": "CH55225.01",
+    "teacherName": "\u5f20\u56fd\u9896, \u6d2a\u6625\u96c1",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456293600,
+            "endDate": 1456299300,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u6d2a\u6625\u96c1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456293600,
+            "endDate": 1456299300,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u5f20\u56fd\u9896",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456300500,
+            "endDate": 1456303200,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u6d2a\u6625\u96c1",
+            "periods": 1,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456300500,
+            "endDate": 1456303200,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u5f20\u56fd\u9896",
+            "periods": 1,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456466400,
+            "endDate": 1456472100,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u6d2a\u6625\u96c1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1456466400,
+            "endDate": 1456472100,
+            "name": "\u751f\u7269\u6750\u6599",
+            "location": "2210",
+            "teacherName": "\u5f20\u56fd\u9896",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1\u5468 2210 :3(6,7) \u6d2a\u6625\u96c1\n1\u5468 2210 :3(6,7) \u5f20\u56fd\u9896\n1\u5468 2210 :3(8,8) \u6d2a\u6625\u96c1\n1\u5468 2210 :3(8,8) \u5f20\u56fd\u9896\n1\u5468 2210 :5(6,7) \u6d2a\u6625\u96c1\n1\u5468 2210 :5(6,7) \u5f20\u56fd\u9896",
+    "credit": 4,
+    "additionalInfo": {}
+}

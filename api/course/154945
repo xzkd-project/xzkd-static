@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 154945,
+    "name": "\u4e0d\u673d\u7684\u827a\u672f\uff1a\u5927\u5e08\u4e0e\u7ecf\u5178",
+    "courseCode": "HS1645M",
+    "lessonCode": "HS1645M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710223200,
+            "endDate": 1710228900,
+            "name": "\u4e0d\u673d\u7684\u827a\u672f\uff1a\u5927\u5e08\u4e0e\u7ecf\u5178",
+            "location": "3A111",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1716271200,
+            "endDate": 1716276900,
+            "name": "\u4e0d\u673d\u7684\u827a\u672f\uff1a\u5927\u5e08\u4e0e\u7ecf\u5178",
+            "location": "3A111",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3,13\u5468 3A111 :2(6,7) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}

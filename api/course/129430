@@ -1,0 +1,53 @@
+{
+    "py/object": "models.course.Course",
+    "id": 129430,
+    "name": "\u6279\u5224\u6027\u601d\u7ef4",
+    "courseCode": "HS1544M",
+    "lessonCode": "HS1544M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08, \u6155\u8bfe\u6559\u5e08, \u94ae\u536b\u661f",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1604575800,
+            "endDate": 1604581500,
+            "name": "\u6279\u5224\u6027\u601d\u7ef4",
+            "location": "5106",
+            "teacherName": "\u94ae\u536b\u661f",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1606390200,
+            "endDate": 1606395900,
+            "name": "\u6279\u5224\u6027\u601d\u7ef4",
+            "location": "5103",
+            "teacherName": "\u94ae\u536b\u661f",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1607599800,
+            "endDate": 1607605500,
+            "name": "\u6279\u5224\u6027\u601d\u7ef4",
+            "location": "5106",
+            "teacherName": "\u94ae\u536b\u661f",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1608809400,
+            "endDate": 1608815100,
+            "name": "\u6279\u5224\u6027\u601d\u7ef4",
+            "location": "5106",
+            "teacherName": "\u94ae\u536b\u661f",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "8,13~15(\u5355)\u5468 5106 :4(11,12) \u94ae\u536b\u661f\n11\u5468 5103 :4(11,12) \u94ae\u536b\u661f",
+    "credit": 1.5,
+    "additionalInfo": {}
+}

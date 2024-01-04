@@ -1,0 +1,63 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126391,
+    "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+    "courseCode": "MBA5004",
+    "lessonCode": "MBA5004.02",
+    "teacherName": "\u5f20\u745e\u7a33",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1590799200,
+            "endDate": 1590832200,
+            "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c",
+            "teacherName": "\u5f20\u745e\u7a33",
+            "periods": 15,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1590885600,
+            "endDate": 1590918600,
+            "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c",
+            "teacherName": "\u5f20\u745e\u7a33",
+            "periods": 10,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1591404000,
+            "endDate": 1591437000,
+            "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c",
+            "teacherName": "\u5f20\u745e\u7a33",
+            "periods": 15,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1591490400,
+            "endDate": 1591523400,
+            "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c",
+            "teacherName": "\u5f20\u745e\u7a33",
+            "periods": 10,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1592095200,
+            "endDate": 1592128200,
+            "name": "\u8d22\u52a1\u7ba1\u7406\u53ca\u5206\u6790",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c",
+            "teacherName": "\u5f20\u745e\u7a33",
+            "periods": 10,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "15~16\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c :6(08:40~17:50) \u5f20\u745e\u7a33\n16~18\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u53f7\u697c :7(08:40~17:50) \u5f20\u745e\u7a33",
+    "credit": 3,
+    "additionalInfo": {}
+}

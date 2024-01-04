@@ -1,0 +1,53 @@
+{
+    "py/object": "models.course.Course",
+    "id": 151986,
+    "name": "\u533b\u60a3\u6c9f\u901a\u4e0e\u4eba\u6587",
+    "courseCode": "CLIN6118P",
+    "lessonCode": "CLIN6118P.01",
+    "teacherName": "\u848b\u6765",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1688860200,
+            "endDate": 1688869800,
+            "name": "\u533b\u60a3\u6c9f\u901a\u4e0e\u4eba\u6587",
+            "location": "\u9644\u4e00\u9662\u5357\u533a3\u53f7\u697c",
+            "teacherName": "\u848b\u6765",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1689465000,
+            "endDate": 1689474600,
+            "name": "\u533b\u60a3\u6c9f\u901a\u4e0e\u4eba\u6587",
+            "location": "\u9644\u4e00\u9662\u5357\u533a3\u53f7\u697c",
+            "teacherName": "\u848b\u6765",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1690069800,
+            "endDate": 1690079400,
+            "name": "\u533b\u60a3\u6c9f\u901a\u4e0e\u4eba\u6587",
+            "location": "\u9644\u4e00\u9662\u5357\u533a3\u53f7\u697c",
+            "teacherName": "\u848b\u6765",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1690674600,
+            "endDate": 1690684200,
+            "name": "\u533b\u60a3\u6c9f\u901a\u4e0e\u4eba\u6587",
+            "location": "\u9644\u4e00\u9662\u5357\u533a3\u53f7\u697c",
+            "teacherName": "\u848b\u6765",
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "1~4\u5468 \u9644\u4e00\u9662\u5357\u533a3\u53f7\u697c :7(1,2,3) \u848b\u6765",
+    "credit": 0.5,
+    "additionalInfo": {}
+}

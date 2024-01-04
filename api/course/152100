@@ -1,0 +1,93 @@
+{
+    "py/object": "models.course.Course",
+    "id": 152100,
+    "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+    "courseCode": "MPAD6421P",
+    "lessonCode": "MPAD6421P.01",
+    "teacherName": "\u738b\u5584\u52c7",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1703202600,
+            "endDate": 1703218200,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1703289000,
+            "endDate": 1703304600,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662307",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1703375400,
+            "endDate": 1703391000,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662307",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1704844200,
+            "endDate": 1704859800,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1704866400,
+            "endDate": 1704882000,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1704930600,
+            "endDate": 1704946200,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1704952800,
+            "endDate": 1704968400,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1705017000,
+            "endDate": 1705032600,
+            "name": "\u516c\u5171\u8d22\u653f\u4e0e\u7a0e\u6536",
+            "location": "\u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308",
+            "teacherName": "\u738b\u5584\u52c7",
+            "periods": 5,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "19\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308 :3(1,2,3,4,5) \u738b\u5584\u52c7\n19\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308 :3(6,7,8,9,10) \u738b\u5584\u52c7\n19\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308 :4(1,2,3,4,5) \u738b\u5584\u52c7\n19\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308 :4(6,7,8,9,10) \u738b\u5584\u52c7\n16,19\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662308 :5(1,2,3,4,5) \u738b\u5584\u52c7\n16\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662307 :6(1,2,3,4,5) \u738b\u5584\u52c7\n17\u5468 \u5357\u533a\u516c\u5171\u4e8b\u52a1\u5b66\u9662307 :7(1,2,3,4,5) \u738b\u5584\u52c7",
+    "credit": 2,
+    "additionalInfo": {}
+}

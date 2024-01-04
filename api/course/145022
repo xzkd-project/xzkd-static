@@ -1,0 +1,43 @@
+{
+    "py/object": "models.course.Course",
+    "id": 145022,
+    "name": "\u5b9e\u8df5\u7efc\u5408",
+    "courseCode": "EIEN6711P",
+    "lessonCode": "EIEN6711P.02",
+    "teacherName": "\u4e01\u7b90",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1662895800,
+            "endDate": 1662904500,
+            "name": "\u5b9e\u8df5\u7efc\u5408",
+            "location": "\u6307\u5bfc\u8001\u5e08\u6307\u5bfc",
+            "teacherName": "\u4e01\u7b90",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1663500600,
+            "endDate": 1663509300,
+            "name": "\u5b9e\u8df5\u7efc\u5408",
+            "location": "\u6307\u5bfc\u8001\u5e08\u6307\u5bfc",
+            "teacherName": "\u4e01\u7b90",
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1664105400,
+            "endDate": 1664114100,
+            "name": "\u5b9e\u8df5\u7efc\u5408",
+            "location": "\u6307\u5bfc\u8001\u5e08\u6307\u5bfc",
+            "teacherName": "\u4e01\u7b90",
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "3~5\u5468 \u6307\u5bfc\u8001\u5e08\u6307\u5bfc :7(11,12,13) \u4e01\u7b90",
+    "credit": 3,
+    "additionalInfo": {}
+}

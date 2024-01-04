@@ -1,0 +1,53 @@
+{
+    "py/object": "models.course.Course",
+    "id": 79250,
+    "name": "\u7cfb\u7edf\u6570\u636e",
+    "courseCode": "601999",
+    "lessonCode": "601999.01",
+    "teacherName": "",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1467503400,
+            "endDate": 1467509100,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5103",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1467510300,
+            "endDate": 1467519000,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5103",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1468108200,
+            "endDate": 1468113900,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5103",
+            "teacherName": null,
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1468115100,
+            "endDate": 1468123800,
+            "name": "\u7cfb\u7edf\u6570\u636e",
+            "location": "5103",
+            "teacherName": null,
+            "periods": 3,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "2~3\u5468 5103 :7(1,2)\n2~3\u5468 5103 :7(3,5)",
+    "credit": 0,
+    "additionalInfo": {}
+}

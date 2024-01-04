@@ -1,0 +1,33 @@
+{
+    "py/object": "models.course.Course",
+    "id": 148307,
+    "name": "\u5546\u52a1\u4f26\u7406",
+    "courseCode": "MBAD6002U",
+    "lessonCode": "MBAD6002U.06",
+    "teacherName": "\u5218\u5ead",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1687048200,
+            "endDate": 1687080600,
+            "name": "\u5546\u52a1\u4f26\u7406",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c302",
+            "teacherName": "\u5218\u5ead",
+            "periods": 10,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1688257800,
+            "endDate": 1688290200,
+            "name": "\u5546\u52a1\u4f26\u7406",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c302",
+            "teacherName": "\u5218\u5ead",
+            "periods": 10,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "16~18(\u53cc)\u5468 \u56fd\u91d1\u96621\u53f7\u697c302 :7(08:30~17:30) \u5218\u5ead",
+    "credit": 1,
+    "additionalInfo": {}
+}

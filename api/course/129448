@@ -1,0 +1,53 @@
+{
+    "py/object": "models.course.Course",
+    "id": 129448,
+    "name": "\u5510\u8bd7\u5b8b\u8bcd\u4eba\u6587\u89e3\u8bfb",
+    "courseCode": "HS1541M",
+    "lessonCode": "HS1541M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08, \u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1603366200,
+            "endDate": 1603371900,
+            "name": "\u5510\u8bd7\u5b8b\u8bcd\u4eba\u6587\u89e3\u8bfb",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1604575800,
+            "endDate": 1604581500,
+            "name": "\u5510\u8bd7\u5b8b\u8bcd\u4eba\u6587\u89e3\u8bfb",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1605785400,
+            "endDate": 1605791100,
+            "name": "\u5510\u8bd7\u5b8b\u8bcd\u4eba\u6587\u89e3\u8bfb",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1606995000,
+            "endDate": 1607000700,
+            "name": "\u5510\u8bd7\u5b8b\u8bcd\u4eba\u6587\u89e3\u8bfb",
+            "location": "3B103",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "6~12(\u53cc)\u5468 3B103 :4(11,12) \u6155\u8bfe\u6559\u5e08",
+    "credit": 1.5,
+    "additionalInfo": {}
+}

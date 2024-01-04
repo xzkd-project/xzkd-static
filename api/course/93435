@@ -1,0 +1,2733 @@
+{
+    "py/object": "models.course.Course",
+    "id": 93435,
+    "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+    "courseCode": "003145",
+    "lessonCode": "003145.01",
+    "teacherName": "\u53f6\u6811\u96c6, \u5468\u6653\u56fd, \u95eb\u7acb\u5cf0, \u66fe\u6770, \u5362\u5f81\u5929, \u8d75\u747e, \u738b\u5174\u5b89, \u7530\u5584\u559c, \u90b5\u7fd4, \u9ec4\u4f1f\u65b0, \u674e\u7fa4\u7965, \u674e\u5fae\u96ea, \u8def\u519b\u5cad, \u6c5f\u4fca, \u9648\u8273\u971e, \u90d1\u6653, \u6731\u4fca\u53d1",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523253600,
+            "endDate": 1523259300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523260500,
+            "endDate": 1523266200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523858400,
+            "endDate": 1523864100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1523865300,
+            "endDate": 1523871000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524463200,
+            "endDate": 1524468900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1524470100,
+            "endDate": 1524475800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525068000,
+            "endDate": 1525073700,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525074900,
+            "endDate": 1525080600,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525672800,
+            "endDate": 1525678500,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1525679700,
+            "endDate": 1525685400,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526277600,
+            "endDate": 1526283300,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526284500,
+            "endDate": 1526290200,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526882400,
+            "endDate": 1526888100,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1526889300,
+            "endDate": 1526895000,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527487200,
+            "endDate": 1527492900,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u738b\u5174\u5b89",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6731\u4fca\u53d1",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u7530\u5584\u559c",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u53f6\u6811\u96c6",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8d75\u747e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90b5\u7fd4",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9ec4\u4f1f\u65b0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u95eb\u7acb\u5cf0",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u8def\u519b\u5cad",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u66fe\u6770",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u5fae\u96ea",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u674e\u7fa4\u7965",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u9648\u8273\u971e",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u6c5f\u4fca",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5468\u6653\u56fd",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u5362\u5f81\u5929",
+            "periods": 2,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1527494100,
+            "endDate": 1527499800,
+            "name": "\u5316\u5b66\u7269\u7406\u8fdb\u5c55",
+            "location": "5302",
+            "teacherName": "\u90d1\u6653",
+            "periods": 2,
+            "additionalInfo": {}
+        }
+    ],
+    "description": "7~14\u5468 5302 :1(6,7) \u738b\u5174\u5b89\n7~14\u5468 5302 :1(6,7) \u6731\u4fca\u53d1\n7~14\u5468 5302 :1(6,7) \u7530\u5584\u559c\n7~14\u5468 5302 :1(6,7) \u53f6\u6811\u96c6\n7~14\u5468 5302 :1(6,7) \u8d75\u747e\n7~14\u5468 5302 :1(6,7) \u90b5\u7fd4\n7~14\u5468 5302 :1(6,7) \u9ec4\u4f1f\u65b0\n7~14\u5468 5302 :1(6,7) \u95eb\u7acb\u5cf0\n7~14\u5468 5302 :1(6,7) \u8def\u519b\u5cad\n7~14\u5468 5302 :1(6,7) \u66fe\u6770\n7~14\u5468 5302 :1(6,7) \u674e\u5fae\u96ea\n7~14\u5468 5302 :1(6,7) \u674e\u7fa4\u7965\n7~14\u5468 5302 :1(6,7) \u9648\u8273\u971e\n7~14\u5468 5302 :1(6,7) \u6c5f\u4fca\n7~14\u5468 5302 :1(6,7) \u5468\u6653\u56fd\n7~14\u5468 5302 :1(6,7) \u5362\u5f81\u5929\n7~14\u5468 5302 :1(6,7) \u90d1\u6653\n7~14\u5468 5302 :1(8,9) \u738b\u5174\u5b89\n7~14\u5468 5302 :1(8,9) \u6731\u4fca\u53d1\n7~14\u5468 5302 :1(8,9) \u7530\u5584\u559c\n7~14\u5468 5302 :1(8,9) \u53f6\u6811\u96c6\n7~14\u5468 5302 :1(8,9) \u8d75\u747e\n7~14\u5468 5302 :1(8,9) \u90b5\u7fd4\n7~14\u5468 5302 :1(8,9) \u9ec4\u4f1f\u65b0\n7~14\u5468 5302 :1(8,9) \u95eb\u7acb\u5cf0\n7~14\u5468 5302 :1(8,9) \u8def\u519b\u5cad\n7~14\u5468 5302 :1(8,9) \u66fe\u6770\n7~14\u5468 5302 :1(8,9) \u674e\u5fae\u96ea\n7~14\u5468 5302 :1(8,9) \u674e\u7fa4\u7965\n7~14\u5468 5302 :1(8,9) \u9648\u8273\u971e\n7~14\u5468 5302 :1(8,9) \u6c5f\u4fca\n7~14\u5468 5302 :1(8,9) \u5468\u6653\u56fd\n7~14\u5468 5302 :1(8,9) \u5362\u5f81\u5929\n7~14\u5468 5302 :1(8,9) \u90d1\u6653",
+    "credit": 1,
+    "additionalInfo": {}
+}
