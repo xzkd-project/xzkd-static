@@ -25,8 +25,8 @@ if __name__ == '__main__':
     del (json["base_moved"])
 
     for key in json:
-        json[key] = [float(json[key][0]) - offset[0],
-                     float(json[key][1]) - offset[1]]
+        json[key] = [float(json[key][0]) + offset[0],
+                     float(json[key][1]) + offset[1]]
 
     # export in format:
     # [{"name": "name", "latitude": lat, "longitude": long}, ...]
