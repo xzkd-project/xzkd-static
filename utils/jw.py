@@ -47,7 +47,7 @@ async def login(session: aiohttp.ClientSession):
     )
     image = Image.open(BytesIO(await response.read()))
     image = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
-    kernel = np.ones((3,3), np.uint8)
+    kernel = np.ones((3, 3), np.uint8)
     image = cv2.dilate(image, kernel, iterations=1)
     image = cv2.erode(image, kernel, iterations=1)
     lt = pytesseract.image_to_string(Image.fromarray(image))[0:4]
@@ -70,8 +70,48 @@ async def login(session: aiohttp.ClientSession):
     if not url == "https://jw.ustc.edu.cn/":
         raise Exception("Login failed")
 
+indexStartTimes: dict[int: int] = {
+    1: 7 * 60 + 50,
+    2: 8 * 60 + 40,
+    3: 9 * 60 + 25,
+    4: 10 * 60 + 35,
+    5: 11 * 60 + 25,
+    6: 14 * 60 + 0,
+    7: 14 * 60 + 50,
+    8: 15 * 60 + 35,
+    9: 16 * 60 + 45,
+    10: 17 * 60 + 35,
+    11: 19 * 60 + 30,
+    12: 20 * 60 + 20,
+    13: 21 * 60 + 10
+}
 
-async def update_lectures(session: aiohttp.ClientSession, course_list: [Course]) -> [Course]:
+# 0835 0925 0945 1030 1120 1445 1535 1555 1640 1730 2015 2105 2155
+endIndexTimes: dict[int: int] = {
+    1: 8 * 60 + 35,
+    2: 9 * 60 + 25,
+    3: 9 * 60 + 45,
+    4: 10 * 60 + 30,
+    5: 11 * 60 + 20,
+    6: 15 * 60 + 45,
+    7: 16 * 60 + 35,
+    8: 15 * 60 + 55,
+    9: 16 * 60 + 40,
+    10: 17 * 60 + 30,
+    11: 20 * 60 + 15,
+    12: 21 * 60 + 5,
+    13: 21 * 60 + 55
+}
+
+
+def findNearestIndex(time: int, times: dict[int: int]) -> int:
+    map = {}
+    for index, t in times.items():
+        map[abs(time - t)] = index
+    return map[min(map.keys())]
+
+
+async def update_lectures(session: aiohttp.ClientSession, course_list: list[Course]) -> list[Course]:
     course_id_list = [course.id for course in course_list]
     url = "https://jw.ustc.edu.cn/ws/schedule-table/datum"
     data = {
@@ -91,16 +131,21 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: [Course])
     json = json["result"]
 
     for schedule_json in json["scheduleList"]:
-        course = [course for course in course_list if course.id == schedule_json["lessonId"]][0]
+        course = [course for course in course_list if course.id ==
+                  schedule_json["lessonId"]][0]
 
         date = raw_date_to_unix_timestamp(schedule_json["date"])
         startHHMM = int(schedule_json["startTime"])
         endHHMM = int(schedule_json["endTime"])
 
-        startDate = date + int(startHHMM // 100) * 3600 + int(startHHMM % 100) * 60
+        startDate = date + int(startHHMM // 100) * \
+            3600 + int(startHHMM % 100) * 60
         endDate = date + int(endHHMM // 100) * 3600 + int(endHHMM % 100) * 60
 
         location = schedule_json["room"]["nameZh"] if schedule_json["room"] else schedule_json["customPlace"]
+
+        startIndex = findNearestIndex(startHHMM, indexStartTimes)
+        endIndex = findNearestIndex(endHHMM, endIndexTimes)
 
         lecture = Lecture(
             startDate=startDate,
@@ -109,7 +154,9 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: [Course])
             location=location,
             teacherName=schedule_json["personName"],
             periods=schedule_json["periods"],
-            additionalInfo={}
+            additionalInfo={},
+            startIndex=startIndex,
+            endIndex=endIndex
         )
 
         for course in course_list:

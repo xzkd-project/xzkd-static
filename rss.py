@@ -25,7 +25,7 @@ async def get_and_clean_feed(url: str, path_to_save: str):
     handler.ignore_links = True
     handler.ignore_images = True
 
-    for entry in tqdm(feed.entries):
+    for entry in tqdm(feed.entries, position=0, leave=True, desc=f"Processing {path_to_save.split('/')[-1]}"):
         try:
             date_raw = entry.published
             try:
@@ -63,7 +63,7 @@ async def make_rss():
 
     tj_ustc_RSS(rss_path)
 
-    for feed in tqdm(config['feeds']):
+    for feed in tqdm(config['feeds'], position=1, leave=True, desc="Processing feeds"):
         filepath = os.path.join(rss_path, feed['xmlFilename'])
         await get_and_clean_feed(feed['url'], filepath)
 

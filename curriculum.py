@@ -36,7 +36,7 @@ async def fetch_semester(session: aiohttp.ClientSession, curriculum_path: str, s
     sem = asyncio.Semaphore(50)
 
     # create a progress bar explicitly in async context
-    progress_bar = tqdm(total=len(courses))
+    progress_bar = tqdm(total=len(courses), position=0, leave=True, desc=f"Processing semester id={semester_id}")
 
     # split into chunks of 50 courses, and fetch them concurrently
     course_chunks = [courses[i:i + 50] for i in range(0, len(courses), 50)]
@@ -62,7 +62,7 @@ async def make_curriculum():
         semesters = await get_semesters()
         save_json(semesters, os.path.join(curriculum_path, "semesters.json"))
 
-        for semester in tqdm(semesters):
+        for semester in tqdm(semesters, position=1, leave=True, desc="Processing semesters"):
             await fetch_semester(session, curriculum_path, str(semester.id), course_api_path)
 
 

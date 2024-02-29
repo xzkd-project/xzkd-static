@@ -6,9 +6,11 @@ class Lecture:
     teacherName: str
     periods: float
     additionalInfo: dict[str, str]
+    startIndex: int
+    endIndex: int
 
     def __init__(self, startDate: int, endDate: int, name: str, location: str, teacherName: str, periods: float,
-                 additionalInfo: dict[str, str]):
+                 additionalInfo: dict[str, str], startIndex: int, endIndex: int):
         self.startDate = startDate
         self.endDate = endDate
         self.name = name
@@ -16,3 +18,5 @@ class Lecture:
         self.teacherName = teacherName
         self.periods = periods
         self.additionalInfo = additionalInfo
+        self.startIndex = startIndex
+        self.endIndex = endIndex
