@@ -144,8 +144,8 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
 
         location = schedule_json["room"]["nameZh"] if schedule_json["room"] else schedule_json["customPlace"]
 
-        startIndex = findNearestIndex(startHHMM, indexStartTimes)
-        endIndex = findNearestIndex(endHHMM, endIndexTimes)
+        startIndex = findNearestIndex(int(startHHMM // 100) * 60 + int(startHHMM % 100), indexStartTimes)
+        endIndex = findNearestIndex(int(endHHMM // 100) * 60 + int(endHHMM % 100), endIndexTimes)
 
         lecture = Lecture(
             startDate=startDate,
