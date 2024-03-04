@@ -60,8 +60,12 @@ async def get_courses(semester_id: str) -> list[Course]:
 
     result = []
     for course_json in json:
-        teachers = ", ".join([(teacher["cn"] if teacher["cn"] != None else teacher["en"])
-                             for teacher in course_json["teacherAssignmentList"]])
+        teacher_name_list = [teacher["cn"]
+                             for teacher in course_json["teacherAssignmentList"]]
+        # strip None:
+        teacher_name_list = [
+            teacher_name for teacher_name in teacher_name_list if teacher_name]
+        teachers = ", ".join(teacher_name_list)
         result.append(Course(
             id=course_json["id"],
             name=course_json["course"]["cn"],
