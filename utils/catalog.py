@@ -19,7 +19,7 @@ async def get_token() -> str:
     return json["access_token"]
 
 
-async def get_semesters() -> [Semester]:
+async def get_semesters() -> list[Semester]:
     token = await get_token()
     url = "https://catalog.ustc.edu.cn/api/teach/semester/list?access_token=" + token
     async with aiohttp.ClientSession() as session:
@@ -44,9 +44,10 @@ async def get_semesters() -> [Semester]:
     return result
 
 
-async def get_courses(semester_id: str) -> [Course]:
+async def get_courses(semester_id: str) -> list[Course]:
     token = await get_token()
-    url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + semester_id + "?access_token=" + token
+    url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + \
+        semester_id + "?access_token=" + token
     async with aiohttp.ClientSession() as session:
         response = await session.get(
             url=url,
@@ -59,7 +60,8 @@ async def get_courses(semester_id: str) -> [Course]:
 
     result = []
     for course_json in json:
-        teachers = ", ".join([teacher["cn"] for teacher in course_json["teacherAssignmentList"]])
+        teachers = ", ".join([(teacher["cn"] if teacher["cn"] != None else teacher["en"])
+                             for teacher in course_json["teacherAssignmentList"]])
         result.append(Course(
             id=course_json["id"],
             name=course_json["course"]["cn"],
