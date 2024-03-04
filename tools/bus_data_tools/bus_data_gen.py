@@ -26,17 +26,24 @@ xianyanyuan = Campus(5, "先研院", 117.129257, 31.826345)
 gaoxin = Campus(6, "高新", 117.129369, 31.820447)
 
 
-Route = list[Campus]
+# Route = list[Campus]
+class Route:
+    def __init__(self, id: int, campuses: list[Campus]):
+        self.id = id
+        self.campuses = campuses
+
+    id: int
+    campuses: list[Campus]
 
 
-routeA = [east, north, west]
-routeB = [west, north, east]
-routeC = [east, south]
-routeD = [south, east]
-routeE = [west, south]
-routeF = [south, west]
-routeG = [gaoxin, xianyanyuan, west, east]
-routeH = [east, west, xianyanyuan, gaoxin]
+routeA = Route(1, [east, north, west])
+routeB = Route(2, [west, north, east])
+routeC = Route(3, [east, south])
+routeD = Route(4, [south, east])
+routeE = Route(5, [west, south])
+routeF = Route(6, [south, west])
+routeG = Route(7, [gaoxin, xianyanyuan, west, east])
+routeH = Route(8, [east, west, xianyanyuan, gaoxin])
 
 
 class RouteSchedule:
@@ -245,5 +252,5 @@ data = BusData(
 
 data_json = jsonpickle.encode(data, unpicklable=False, indent=2)
 # write to ./bus_data.json
-with open(os.path.join(os.path.dirname(__file__), "bus_data_v2.json"), "w") as f:
+with open(os.path.join(os.path.dirname(__file__), "bus_data_v3.json"), "w") as f:
     f.write(data_json)
