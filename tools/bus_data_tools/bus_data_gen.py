@@ -202,31 +202,45 @@ def convert(rsp: RouteScheduleP, is_weekend: bool) -> RouteSchedule:
         return RouteSchedule(rsp.route, [x[0] for x in rsp.time])
 
 
+class Message:
+    def __init__(self, message: str, url: str):
+        self.message = message
+        self.url = url
+    message: str
+    url: str
+
+
 class BusData:
     def __init__(self, campuses: list[Campus], routes: list[Route], weekday_routes: list[RouteSchedule],
-                 weekend_routes: list[RouteSchedule]):
+                 weekend_routes: list[RouteSchedule], message: Message):
         self.campuses = campuses
         self.routes = routes
         self.weekday_routes = weekday_routes
         self.weekend_routes = weekend_routes
+        self.message = message
 
     campuses: list[Campus]
     routes: list[Route]
     weekday_routes: list[RouteSchedule]
     weekend_routes: list[RouteSchedule]
+    message: Message
 
 
 data = BusData(
-    [east, west, north, south, xianyanyuan, gaoxin],
-    [routeA, routeB, routeC, routeD, routeE, routeF, routeG, routeH],
-    list(map(
+    campuses=[east, west, north, south, xianyanyuan, gaoxin],
+    routes=[routeA, routeB, routeC, routeD, routeE, routeF, routeG, routeH],
+    weekday_routes=list(map(
         lambda x: convert(x, False),
         [rsA, rsB, rsC, rsD, rsE, rsF]
     )) + [rsG, rsH],
-    list(map(
+    weekend_routes=list(map(
         lambda x: convert(x, True),
         [rsA, rsB, rsC, rsD, rsE, rsF]
-    )) + [rsGweekend, rsHweekend]
+    )) + [rsGweekend, rsHweekend],
+    message=Message(
+        message="本表为 2024 春季学期时间表，来源：蜗壳小道消息",
+        url="https://mp.weixin.qq.com/s/IQP3Qh2MNfwNJwiyvORr5g"
+    )
 )
 
 data_json = jsonpickle.encode(data, unpicklable=False, indent=2)
