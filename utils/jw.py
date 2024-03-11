@@ -118,19 +118,23 @@ def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
     1. At the same time & place, sometimes jw.u.e.c would return two lectures, but with different teacher names, combine them as one.
     2. A Lecture taking place in non conventional time, for example 19:00 - 21:00 would be split into two lectures, combine them as one.
     """
-    lectures.sort(key=lambda x: x.startDate)
-    i = 0
-    while i < len(lectures) - 1:
-        if lectures[i].startDate == lectures[i + 1].startDate and lectures[i].location == lectures[i + 1].location and lectures[i].endDate == lectures[i+1].endDate:
-            lectures[i].teacherName += ", " + lectures[i + 1].teacherName
-            lectures.pop(i + 1)
+    result = []
+
+    for lecture in lectures:
+        for r in result:
+            if lecture.startDate >= r.startDate and lecture.location == r.location and lecture.endDate <= r.endDate:
+                r.teacherName += "," + lecture.teacherName
+                break
+            elif lecture.endDate == r.startDate:
+                r.startDate = lecture.startDate
+                r.startIndex = lecture.startIndex
+                break
+            elif lecture.startDate == r.endDate:
+                r.endDate = lecture.endDate
+                r.endIndex = lecture.endIndex
+                break
         else:
-            if lectures[i].endDate == lectures[i+1].startDate:
-                lectures[i].endDate = lectures[i+1].endDate
-                lectures[i].endIndex = lectures[i+1].endIndex
-                lectures.pop(i + 1)
-            i += 1
-    return lectures
+            result.append(lecture)
 
 
 async def update_lectures(session: aiohttp.ClientSession, course_list: list[Course]) -> list[Course]:
