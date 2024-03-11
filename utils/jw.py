@@ -122,8 +122,11 @@ def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
 
     for lecture in lectures:
         for r in result:
-            if lecture.startDate >= r.startDate and lecture.location == r.location and lecture.endDate <= r.endDate:
-                r.teacherName += "," + lecture.teacherName
+            if lecture.startDate >= r.startDate and lecture.endDate <= r.endDate:
+                if not lecture.teacherName in r.teacherName:
+                    r.teacherName += "," + lecture.teacherName
+                if not lecture.location in r.location:
+                    r.location += "," + lecture.location
                 break
             elif lecture.endDate == r.startDate:
                 r.startDate = lecture.startDate
@@ -170,6 +173,8 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
         endDate = date + int(endHHMM // 100) * 3600 + int(endHHMM % 100) * 60
 
         location = schedule_json["room"]["nameZh"] if schedule_json["room"] else schedule_json["customPlace"]
+        if not location:
+            location = ""
 
         startIndex = findNearestIndex(
             int(startHHMM // 100) * 60 + int(startHHMM % 100), indexStartTimes)
@@ -182,7 +187,7 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
             name=course.name,
             location=location,
             teacherName=schedule_json["personName"] if schedule_json["personName"] else "",
-            periods=schedule_json["periods"],
+            periods=schedule_json["periods"] if schedule_json["periods"] else 0,
             additionalInfo={},
             startIndex=startIndex,
             endIndex=endIndex
