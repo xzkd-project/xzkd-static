@@ -111,6 +111,28 @@ def findNearestIndex(time: int, times: dict[int: int]) -> int:
     return map[min(map.keys())]
 
 
+def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
+    """
+    This handles the following situations:
+
+    1. At the same time & place, sometimes jw.u.e.c would return two lectures, but with different teacher names, combine them as one.
+    2. A Lecture taking place in non conventional time, for example 19:00 - 21:00 would be split into two lectures, combine them as one.
+    """
+    lectures.sort(key=lambda x: x.startDate)
+    i = 0
+    while i < len(lectures) - 1:
+        if lectures[i].startDate == lectures[i + 1].startDate and lectures[i].location == lectures[i + 1].location and lectures[i].endDate == lectures[i+1].endDate:
+            lectures[i].teacherName += ", " + lectures[i + 1].teacherName
+            lectures.pop(i + 1)
+        else:
+            if lectures[i].endDate == lectures[i+1].startDate:
+                lectures[i].endDate = lectures[i+1].endDate
+                lectures[i].endIndex = lectures[i+1].endIndex
+                lectures.pop(i + 1)
+            i += 1
+    return lectures
+
+
 async def update_lectures(session: aiohttp.ClientSession, course_list: list[Course]) -> list[Course]:
     course_id_list = [course.id for course in course_list]
     url = "https://jw.ustc.edu.cn/ws/schedule-table/datum"
@@ -165,5 +187,8 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
             if course.id == schedule_json["lessonId"]:
                 course.lectures.append(lecture)
                 break
+
+    for course in course_list:
+        course.lectures = cleanLectures(course.lectures)
 
     return course_list

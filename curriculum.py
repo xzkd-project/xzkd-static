@@ -12,7 +12,7 @@ from utils.jw import update_lectures
 from utils.tools import save_json
 
 
-async def fetch_course_info(session: aiohttp.ClientSession, semester_path: str, _courses: [Course], sem, progress_bar, course_api_path: str):
+async def fetch_course_info(session: aiohttp.ClientSession, semester_path: str, _courses: list[Course], sem, progress_bar, course_api_path: str):
     async with sem:
         _courses = await update_lectures(session, _courses)
 
