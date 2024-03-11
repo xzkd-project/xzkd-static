@@ -135,6 +135,7 @@ def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
                 break
         else:
             result.append(lecture)
+    return result
 
 
 async def update_lectures(session: aiohttp.ClientSession, course_list: list[Course]) -> list[Course]:
@@ -180,7 +181,7 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
             endDate=endDate,
             name=course.name,
             location=location,
-            teacherName=schedule_json["personName"],
+            teacherName=schedule_json["personName"] if schedule_json["personName"] else "",
             periods=schedule_json["periods"],
             additionalInfo={},
             startIndex=startIndex,
