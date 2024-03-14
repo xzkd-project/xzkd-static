@@ -60,6 +60,7 @@ async def make_curriculum():
         await jw_login(session)
 
         semesters = await get_semesters()
+        semesters = [semester for semester in semesters if int(semester.id) >= 141] # dropping semester before 2019
         save_json(semesters, os.path.join(curriculum_path, "semesters.json"))
 
         for semester in tqdm(semesters, position=1, leave=True, desc="Processing semesters"):
