@@ -47,26 +47,30 @@ routeH = Route(8, [east, west, xianyanyuan, gaoxin])
 
 
 class RouteSchedule:
-    def __init__(self, route: Route, time: list[list[str]]):
+    def __init__(self, id: int, route: Route, time: list[list[str]]):
+        self.id = id
         self.route = route
         self.time = time
 
+    id: int
     route: Route
     time: list[list[Optional[str]]]
 
 
 class RouteScheduleP:
-    def __init__(self, route: Route, time: list[(list[str], bool)]):
+    def __init__(self, id: int, route: Route, time: list[(list[str], bool)]):
+        self.id = id
         self.route = route
         self.time = time
 
+    id: int
     route: Route
     time: list[(list[Optional[str]], bool)]
 
 
 # starts at 7:25, 9:20, 9:35, 11:35, 12:20, 13:30, 15:30, 15:50, 17:30, 17:50, 18:40, 20:10, 21:15, 22:10,
 # keep None for north(second stop), west at start + 10 minutes
-rsA = RouteScheduleP(routeA, [
+rsA = RouteScheduleP(1, routeA, [
     (["07:25", None, "07:35"], True),
     (["09:20", None, "09:30"], False),
     (["09:35", None, "09:45"], False),
@@ -84,7 +88,7 @@ rsA = RouteScheduleP(routeA, [
 ])
 # rsB is essentially the continuation of rsA, so when the bus arrives at the last stop, it will turn back again,
 # so time starts at rsA's finsh time, None, then +10 minutes
-rsB = RouteScheduleP(routeB, [
+rsB = RouteScheduleP(2, routeB, [
     (["07:35", None, "07:45"], True),
     (["09:30", None, "09:40"], False),
     (["09:45", None, "09:55"], False),
@@ -102,7 +106,7 @@ rsB = RouteScheduleP(routeB, [
 ])
 # rsC takes 15 minutes, start at these times:
 # 07:35, 08:30, 11:35, 11:45, 12:05, 12:40, 14:30, 17:25, 17:45, 18:10, 19:00, 20:30, 21:35, 22:30
-rsC = RouteScheduleP(routeC, [
+rsC = RouteScheduleP(3, routeC, [
     (["07:35", "07:50"], False),
     (["08:30", "08:45"], False),
     (["11:35", "11:50"], False),
@@ -120,7 +124,7 @@ rsC = RouteScheduleP(routeC, [
 ])
 # rsD takes 15 minutes, start at these times:
 # 07:10, 07:30, 08:00, 09:00, 12:00, 13:20, 13:40, 14:00, 15:10, 18:20, 19:15, 20:45, 21:50, 22:45
-rsD = RouteScheduleP(routeD, [
+rsD = RouteScheduleP(4, routeD, [
     (["07:10", "07:25"], False),
     (["07:30", "07:45"], True),
     (["08:00", "08:15"], False),
@@ -138,7 +142,7 @@ rsD = RouteScheduleP(routeD, [
 ])
 # rsE: 20min, start times:
 # 07:35, 11:35, 12:30, 17:35, 18:00, 18:50, 20:20, 21:35, 22:20
-rsE = RouteScheduleP(routeE, [
+rsE = RouteScheduleP(5, routeE, [
     (["07:35", "07:55"], False),
     (["11:35", "11:55"], True),
     (["12:30", "12:50"], False),
@@ -151,7 +155,7 @@ rsE = RouteScheduleP(routeE, [
 ])
 # rsF: 20min, start times:
 # 07:10, 07:30, 08:00, 08:30, 09:00, 13:20, 13:40, 14:00, 15:10
-rsF = RouteScheduleP(routeF, [
+rsF = RouteScheduleP(6, routeF, [
     (["07:10", "07:30"], False),
     (["07:30", "07:50"], True),
     (["08:00", "08:20"], False),
@@ -164,7 +168,7 @@ rsF = RouteScheduleP(routeF, [
 ])
 # rsG: start, +5, None, +45
 # 06:40, 08:00, 09:35, 12:50, 14:30, 18:30, 22:05
-rsG = RouteSchedule(routeG, [
+rsG = RouteSchedule(7, routeG, [
     ["06:40", "06:45", None, "07:30"],
     ["08:00", "08:05", None, "08:50"],
     ["09:35", "09:40", None, "10:25"],
@@ -175,7 +179,7 @@ rsG = RouteSchedule(routeG, [
 ])
 # rsH: start, +10, None, +45
 # 06:50, 08:00, 12:50, 14:30, 18:30, 21:20, 22:05
-rsH = RouteSchedule(routeH, [
+rsH = RouteSchedule(8, routeH, [
     ["06:50", "07:00", None, "07:45"],
     ["08:00", "08:10", None, "08:55"],
     ["12:50", "13:00", None, "13:45"],
@@ -184,14 +188,14 @@ rsH = RouteSchedule(routeH, [
     ["21:20", "21:30", None, "22:15"],
     ["22:05", "22:15", None, "23:00"],
 ])
-rsGweekend = RouteSchedule(routeG, [
+rsGweekend = RouteSchedule(9, routeG, [
     # 08:00, 13:40, 16:00, 21:50
     ["08:00", "08:05", None, "08:50"],
     ["13:40", "13:45", None, "14:30"],
     ["16:00", "16:05", None, "16:50"],
     ["21:50", "21:55", None, "22:40"]
 ])
-rsHweekend = RouteSchedule(routeH, [
+rsHweekend = RouteSchedule(10, routeH, [
     # 07:00, 12:50, 18:30, 21:50
     ["07:00", "07:10", None, "07:55"],
     ["12:50", "13:00", None, "13:45"],
@@ -203,10 +207,10 @@ rsHweekend = RouteSchedule(routeH, [
 def convert(rsp: RouteScheduleP, is_weekend: bool) -> RouteSchedule:
     if is_weekend:
         # only return True times
-        return RouteSchedule(rsp.route, [x[0] for x in rsp.time if x[1]])
+        return RouteSchedule(rsp.id, rsp.route, [x[0] for x in rsp.time if x[1]])
     else:
         # return all
-        return RouteSchedule(rsp.route, [x[0] for x in rsp.time])
+        return RouteSchedule(rsp.id, rsp.route, [x[0] for x in rsp.time])
 
 
 class Message:
