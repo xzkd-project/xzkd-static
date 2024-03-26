@@ -6,10 +6,9 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
   workflow_dispatch:
+  repository_dispatch:
+    types: [retry_job]
 
 permissions:
   contents: write
