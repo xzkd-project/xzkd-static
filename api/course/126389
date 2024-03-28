@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126389,
+    "name": "\u7ba1\u7406\u6c9f\u901a",
+    "courseCode": "MBA0036",
+    "lessonCode": "MBA0036.03",
+    "teacherName": "\u9648\u7eaa\u6881",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1589392800,
+            "endDate": 1589463300,
+            "name": "\u7ba1\u7406\u6c9f\u901a",
+            "location": "\u56fd\u91d1\u96622\u53f7\u697c202",
+            "teacherName": "\u9648\u7eaa\u6881",
+            "periods": 10,
+            "additionalInfo": {},
+            "startIndex": 1,
+            "endIndex": 13
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1592416800,
+            "endDate": 1592487300,
+            "name": "\u7ba1\u7406\u6c9f\u901a",
+            "location": "\u56fd\u91d1\u96622\u53f7\u697c202",
+            "teacherName": "\u9648\u7eaa\u6881",
+            "periods": 10,
+            "additionalInfo": {},
+            "startIndex": 1,
+            "endIndex": 13
+        }
+    ],
+    "description": "13,18\u5468 \u56fd\u91d1\u96622\u53f7\u697c202 :4(02:00~21:35) \u9648\u7eaa\u6881",
+    "credit": 1,
+    "additionalInfo": {}
+}

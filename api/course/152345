@@ -1,0 +1,25 @@
+{
+    "py/object": "models.course.Course",
+    "id": 152345,
+    "name": "\u7814\u7a76\u751f\u7efc\u5408\u82f1\u8bed",
+    "courseCode": "FORL6101U",
+    "lessonCode": "FORL6101U.11",
+    "teacherName": "\u90a2\u9e3f\u98de",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1694498400,
+            "endDate": 1694504100,
+            "name": "\u7814\u7a76\u751f\u7efc\u5408\u82f1\u8bed",
+            "location": "2121",
+            "teacherName": "\u90a2\u9e3f\u98de",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 7
+        }
+    ],
+    "description": "2\u5468 2121 :2(6,7) \u90a2\u9e3f\u98de",
+    "credit": 2,
+    "additionalInfo": {}
+}

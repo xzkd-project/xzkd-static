@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155078,
+    "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+    "courseCode": "FS1001",
+    "lessonCode": "FS1001.8X",
+    "teacherName": "\u9646\u9ad8\u9e4f, \u5218\u975e\u51e1",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711366200,
+            "endDate": 1711374900,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "\u5730\u7a7a\u5b66\u9662\u6559\u5b66\u884c\u653f\u697c1218\u4f1a\u8bae\u5ba4",
+            "teacherName": "\u9646\u9ad8\u9e4f",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 13
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1714447500,
+            "endDate": 1714459500,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "\u5730\u7a7a\u5b66\u96621218\u4f1a\u8bae\u5ba4",
+            "teacherName": "\u5218\u975e\u51e1",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 5,
+            "endIndex": 6
+        }
+    ],
+    "description": "5\u5468 \u5730\u7a7a\u5b66\u9662\u6559\u5b66\u884c\u653f\u697c1218\u4f1a\u8bae\u5ba4 :1(11,12,13) \u9646\u9ad8\u9e4f\n10\u5468 \u5730\u7a7a\u5b66\u96621218\u4f1a\u8bae\u5ba4 :2(5,6) \u5218\u975e\u51e1",
+    "credit": 1,
+    "additionalInfo": {}
+}

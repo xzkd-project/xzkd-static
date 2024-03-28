@@ -1,0 +1,61 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126365,
+    "name": "\u51b3\u7b56\u79d1\u5b66",
+    "courseCode": "EMBAG001",
+    "lessonCode": "EMBAG001.01",
+    "teacherName": "\u6881\u6a11",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1584147600,
+            "endDate": 1584158400,
+            "name": "\u51b3\u7b56\u79d1\u5b66",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4",
+            "teacherName": "\u6881\u6a11",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 5
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1584165600,
+            "endDate": 1584177300,
+            "name": "\u51b3\u7b56\u79d1\u5b66",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4",
+            "teacherName": "\u6881\u6a11",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1584234000,
+            "endDate": 1584244800,
+            "name": "\u51b3\u7b56\u79d1\u5b66",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4",
+            "teacherName": "\u6881\u6a11",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 5
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1584252000,
+            "endDate": 1584263700,
+            "name": "\u51b3\u7b56\u79d1\u5b66",
+            "location": "\u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4",
+            "teacherName": "\u6881\u6a11",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        }
+    ],
+    "description": "4\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4 :6(09:00~12:00) \u6881\u6a11\n4\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4 :6(14:00~17:15) \u6881\u6a11\n5\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4 :7(09:00~12:00) \u6881\u6a11\n5\u5468 \u4e0a\u6d77\u7814\u7a76\u96624\u680b203\u591a\u5a92\u4f53\u6559\u5ba4 :7(14:00~17:15) \u6881\u6a11",
+    "credit": 2,
+    "additionalInfo": {}
+}

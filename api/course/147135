@@ -1,0 +1,25 @@
+{
+    "py/object": "models.course.Course",
+    "id": 147135,
+    "name": "\u827a\u672f\u7684\u542f\u793a",
+    "courseCode": "HS1618M",
+    "lessonCode": "HS1618M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1684148400,
+            "endDate": 1684153800,
+            "name": "\u827a\u672f\u7684\u542f\u793a",
+            "location": "\u5730\u70b9\u5f85\u5b9a",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 11
+        }
+    ],
+    "description": "11\u5468 \u5730\u70b9\u5f85\u5b9a :1(19:00~20:30) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}

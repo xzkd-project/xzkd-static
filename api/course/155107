@@ -1,0 +1,25 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155107,
+    "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+    "courseCode": "FS1001",
+    "lessonCode": "FS1001.AA",
+    "teacherName": "\u6768\u5229",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709724600,
+            "endDate": 1709730300,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A103",
+            "teacherName": "\u6768\u5229",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 12
+        }
+    ],
+    "description": "2\u5468 3A103 :3(11,12) \u6768\u5229",
+    "credit": 1,
+    "additionalInfo": {}
+}

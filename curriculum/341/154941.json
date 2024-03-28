@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 154941,
+    "name": "\u300a\u7ea2\u697c\u68a6\u300b\u7684\u7a7a\u95f4\u827a\u672f",
+    "courseCode": "HS1641M",
+    "lessonCode": "HS1641M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1713426900,
+            "endDate": 1713432600,
+            "name": "\u300a\u7ea2\u697c\u68a6\u300b\u7684\u7a7a\u95f4\u827a\u672f",
+            "location": "5202",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1715846100,
+            "endDate": 1715851800,
+            "name": "\u300a\u7ea2\u697c\u68a6\u300b\u7684\u7a7a\u95f4\u827a\u672f",
+            "location": "5202",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 9
+        }
+    ],
+    "description": "8,12\u5468 5202 :4(8,9) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}

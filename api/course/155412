@@ -1,0 +1,25 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155412,
+    "name": "\u5b9e\u8df5\u7efc\u5408",
+    "courseCode": "EIEN6711P",
+    "lessonCode": "EIEN6711P.03",
+    "teacherName": "\u738b\u96f7, \u51cc\u5f3a",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709379000,
+            "endDate": 1709387700,
+            "name": "\u5b9e\u8df5\u7efc\u5408",
+            "location": "GT-B101",
+            "teacherName": "\u738b\u96f7,\u51cc\u5f3a",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 13
+        }
+    ],
+    "description": "1\u5468 GT-B101 :6(11,12,13) \u738b\u96f7\n1\u5468 GT-B101 :6(11,12,13) \u51cc\u5f3a",
+    "credit": 3,
+    "additionalInfo": {}
+}

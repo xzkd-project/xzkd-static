@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 154943,
+    "name": "\u897f\u65b9\u601d\u60f3\u7ecf\u5178\u4e0e\u73b0\u4ee3\u793e\u4f1a",
+    "courseCode": "HS1643M",
+    "lessonCode": "HS1643M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711958100,
+            "endDate": 1711963800,
+            "name": "\u897f\u65b9\u601d\u60f3\u7ecf\u5178\u4e0e\u73b0\u4ee3\u793e\u4f1a",
+            "location": "5301",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1716191700,
+            "endDate": 1716197400,
+            "name": "\u897f\u65b9\u601d\u60f3\u7ecf\u5178\u4e0e\u73b0\u4ee3\u793e\u4f1a",
+            "location": "5301",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 2,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 9
+        }
+    ],
+    "description": "6,13\u5468 5301 :1(8,9) \u6155\u8bfe\u6559\u5e08",
+    "credit": 2,
+    "additionalInfo": {}
+}

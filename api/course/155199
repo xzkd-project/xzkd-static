@@ -1,0 +1,73 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155199,
+    "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+    "courseCode": "MEMA6108P",
+    "lessonCode": "MEMA6108P.01",
+    "teacherName": "\u4e01\u658c",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709426400,
+            "endDate": 1709439000,
+            "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u4e01\u658c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 5
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709445600,
+            "endDate": 1709458200,
+            "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u4e01\u658c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710636000,
+            "endDate": 1710648600,
+            "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u4e01\u658c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 5
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710655200,
+            "endDate": 1710667800,
+            "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u4e01\u658c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1713055200,
+            "endDate": 1713067800,
+            "name": "\u5b66\u672f\u89c4\u8303\u4e0e\u8bba\u6587\u5199\u4f5c",
+            "location": "\u56fd\u91d1\u96625#101",
+            "teacherName": "\u4e01\u658c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 5
+        }
+    ],
+    "description": "2~4(\u53cc),8\u5468 \u56fd\u91d1\u96625#101 :7(2,3,4,5) \u4e01\u658c\n2~4(\u53cc)\u5468 \u56fd\u91d1\u96625#101 :7(6,7,8,9) \u4e01\u658c",
+    "credit": 1,
+    "additionalInfo": {}
+}

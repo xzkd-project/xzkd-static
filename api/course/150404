@@ -1,0 +1,61 @@
+{
+    "py/object": "models.course.Course",
+    "id": 150404,
+    "name": "\u82af\u7247\u8bbe\u8ba1\u5b9e\u8df5",
+    "courseCode": "EE4001",
+    "lessonCode": "EE4001.02",
+    "teacherName": "\u767d\u96ea\u98de, \u7a0b\u6797",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1689036000,
+            "endDate": 1689045600,
+            "name": "\u82af\u7247\u8bbe\u8ba1\u5b9e\u8df5",
+            "location": "3A104",
+            "teacherName": "\u767d\u96ea\u98de,\u7a0b\u6797",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 4
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1689058200,
+            "endDate": 1689067800,
+            "name": "\u82af\u7247\u8bbe\u8ba1\u5b9e\u8df5",
+            "location": "3A104",
+            "teacherName": "\u767d\u96ea\u98de,\u7a0b\u6797",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 7,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1689208800,
+            "endDate": 1689218400,
+            "name": "\u82af\u7247\u8bbe\u8ba1\u5b9e\u8df5",
+            "location": "3A104",
+            "teacherName": "\u767d\u96ea\u98de,\u7a0b\u6797",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 4
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1689231000,
+            "endDate": 1689240600,
+            "name": "\u82af\u7247\u8bbe\u8ba1\u5b9e\u8df5",
+            "location": "3A104",
+            "teacherName": "\u767d\u96ea\u98de,\u7a0b\u6797",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 7,
+            "endIndex": 9
+        }
+    ],
+    "description": "1\u5468 3A104 :2(2,3,4) \u767d\u96ea\u98de\n1\u5468 3A104 :2(2,3,4) \u7a0b\u6797\n1\u5468 3A104 :2(7,8,9) \u767d\u96ea\u98de\n1\u5468 3A104 :2(7,8,9) \u7a0b\u6797\n1\u5468 3A104 :4(2,3,4) \u767d\u96ea\u98de\n1\u5468 3A104 :4(2,3,4) \u7a0b\u6797\n1\u5468 3A104 :4(7,8,9) \u767d\u96ea\u98de\n1\u5468 3A104 :4(7,8,9) \u7a0b\u6797",
+    "credit": 3,
+    "additionalInfo": {}
+}

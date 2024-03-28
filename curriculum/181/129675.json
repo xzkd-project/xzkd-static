@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 129675,
+    "name": "\u6570\u636e\u7ed3\u6784\u4e0e\u6570\u636e\u5e93",
+    "courseCode": "210503",
+    "lessonCode": "210503.02",
+    "teacherName": "",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1600476000,
+            "endDate": 1600485600,
+            "name": "\u6570\u636e\u7ed3\u6784\u4e0e\u6570\u636e\u5e93",
+            "location": "\u672a\u5b8c\u6210\u7684\u5b66\u751f\u8865\u6625\u5b63\u5b9e\u9a8c\u8bfe\u65f6,\u897f\u533a\u7535\u4e00\u697c\u673a\u623f2\u5385",
+            "teacherName": "",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 4
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1601080800,
+            "endDate": 1601090400,
+            "name": "\u6570\u636e\u7ed3\u6784\u4e0e\u6570\u636e\u5e93",
+            "location": "\u897f\u533a\u7535\u4e00\u697c\u673a\u623f2\u5385,\u672a\u5b8c\u6210\u7684\u5b66\u751f\u8865\u6625\u5b63\u5b9e\u9a8c\u8bfe\u65f6",
+            "teacherName": "",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 4
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1601685600,
+            "endDate": 1601695200,
+            "name": "\u6570\u636e\u7ed3\u6784\u4e0e\u6570\u636e\u5e93",
+            "location": "\u672a\u5b8c\u6210\u7684\u5b66\u751f\u8865\u6625\u5b63\u5b9e\u9a8c\u8bfe\u65f6,\u897f\u533a\u7535\u4e00\u697c\u673a\u623f2\u5385",
+            "teacherName": "",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 2,
+            "endIndex": 4
+        }
+    ],
+    "description": "1~3\u5468 \u672a\u5b8c\u6210\u7684\u5b66\u751f\u8865\u6625\u5b63\u5b9e\u9a8c\u8bfe\u65f6 :6(2,3,4)\n1~3\u5468 \u897f\u533a\u7535\u4e00\u697c\u673a\u623f2\u5385 :6(2,3,4)",
+    "credit": 3.5,
+    "additionalInfo": {}
+}

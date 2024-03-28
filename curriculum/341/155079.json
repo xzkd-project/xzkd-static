@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155079,
+    "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+    "courseCode": "FS1001",
+    "lessonCode": "FS1001.8Y",
+    "teacherName": "\u53f8\u5ef7",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710243000,
+            "endDate": 1710251700,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A109",
+            "teacherName": "\u53f8\u5ef7",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 13
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711452600,
+            "endDate": 1711461300,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "3A109",
+            "teacherName": "\u53f8\u5ef7",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 11,
+            "endIndex": 13
+        }
+    ],
+    "description": "3~5(\u5355)\u5468 3A109 :2(11,12,13) \u53f8\u5ef7",
+    "credit": 1,
+    "additionalInfo": {}
+}

@@ -1,0 +1,73 @@
+{
+    "py/object": "models.course.Course",
+    "id": 155773,
+    "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+    "courseCode": "MARX6103U",
+    "lessonCode": "MARX6103U.23",
+    "teacherName": "\u8d75\u743c, \u5218\u6d77\u9f99, \u9ec4\u9e64, \u6c5f\u53ef\u53ef, \u82cf\u632f\u6e90",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1709359200,
+            "endDate": 1709371800,
+            "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+            "location": "\u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201",
+            "teacherName": "\u5218\u6d77\u9f99",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1710568800,
+            "endDate": 1710581400,
+            "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+            "location": "\u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201",
+            "teacherName": "\u82cf\u632f\u6e90",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711173600,
+            "endDate": 1711186200,
+            "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+            "location": "\u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201",
+            "teacherName": "\u8d75\u743c",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1711778400,
+            "endDate": 1711791000,
+            "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+            "location": "\u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201",
+            "teacherName": "\u6c5f\u53ef\u53ef",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1714197600,
+            "endDate": 1714210200,
+            "name": "\u9a6c\u514b\u601d\u6069\u683c\u65af\u5217\u5b81\u7ecf\u5178\u8457\u4f5c\u9009\u8bfb",
+            "location": "\u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201",
+            "teacherName": "\u9ec4\u9e64",
+            "periods": 4,
+            "additionalInfo": {},
+            "startIndex": 6,
+            "endIndex": 9
+        }
+    ],
+    "description": "1\u5468 \u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201 :6(6,7,8,9) \u5218\u6d77\u9f99\n3\u5468 \u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201 :6(6,7,8,9) \u82cf\u632f\u6e90\n4\u5468 \u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201 :6(6,7,8,9) \u8d75\u743c\n5\u5468 \u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201 :6(6,7,8,9) \u6c5f\u53ef\u53ef\n9\u5468 \u56fd\u9645\u91d1\u878d\u7814\u7a76\u9662 5#201 :6(6,7,8,9) \u9ec4\u9e64",
+    "credit": 1,
+    "additionalInfo": {}
+}

@@ -1,0 +1,37 @@
+{
+    "py/object": "models.course.Course",
+    "id": 129432,
+    "name": "\u822a\u7a7a\u4e0e\u822a\u5929",
+    "courseCode": "ESS1501M",
+    "lessonCode": "ESS1501M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08, \u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1603698900,
+            "endDate": 1603707600,
+            "name": "\u822a\u7a7a\u4e0e\u822a\u5929",
+            "location": "5407",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 10
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1606118100,
+            "endDate": 1606126800,
+            "name": "\u822a\u7a7a\u4e0e\u822a\u5929",
+            "location": "5407",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "additionalInfo": {},
+            "startIndex": 8,
+            "endIndex": 10
+        }
+    ],
+    "description": "7,11\u5468 5407 :1(8,9,10) \u6155\u8bfe\u6559\u5e08",
+    "credit": 1,
+    "additionalInfo": {}
+}
