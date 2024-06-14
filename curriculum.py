@@ -69,3 +69,6 @@ async def make_curriculum():
 
 def main():
     asyncio.run(make_curriculum())
+
+if __name__ == "__main__":
+    main()

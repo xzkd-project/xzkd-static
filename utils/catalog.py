@@ -7,21 +7,8 @@ from utils.constants import catalog_headers as headers
 from utils.tools import raw_date_to_unix_timestamp
 
 
-async def get_token() -> str:
-    url = "https://catalog.ustc.edu.cn/get_token"
-    async with aiohttp.ClientSession() as session:
-        response = await session.get(
-            url=url,
-            headers=headers,
-            allow_redirects=False
-        )
-        json = await response.json()
-    return json["access_token"]
-
-
 async def get_semesters() -> list[Semester]:
-    token = await get_token()
-    url = "https://catalog.ustc.edu.cn/api/teach/semester/list?access_token=" + token
+    url = "https://catalog.ustc.edu.cn/api/teach/semester/list"
     async with aiohttp.ClientSession() as session:
         response = await session.get(
             url=url,
@@ -45,9 +32,7 @@ async def get_semesters() -> list[Semester]:
 
 
 async def get_courses(semester_id: str) -> list[Course]:
-    token = await get_token()
-    url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + \
-        semester_id + "?access_token=" + token
+    url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + semester_id
     async with aiohttp.ClientSession() as session:
         response = await session.get(
             url=url,

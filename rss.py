@@ -70,3 +70,6 @@ async def make_rss():
 
 def main():
     asyncio.run(make_rss())
+
+if __name__ == "__main__":
+    main()
