@@ -3,6 +3,7 @@ Make RSS feed from: http://www.tj.ustc.edu.cn/tzgg/list.htm
 
 Save rss to outputDir/tj_ustc.xml
 """
+
 import datetime
 import os
 
@@ -17,7 +18,7 @@ description = "体育教学中心，http://www.tj.ustc.edu.cn"
 
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57"
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57",
 }
 
 """
@@ -78,18 +79,18 @@ def parseHTML(html: str):
     for item in items:
         date_raw = item.find("time").text
 
-        date = datetime.datetime.strptime(
-            date_raw, "%Y-%m-%d"
-        ).astimezone(
+        date = datetime.datetime.strptime(date_raw, "%Y-%m-%d").astimezone(
             tz=datetime.timezone(datetime.timedelta(hours=8))
         )
 
-        result.append({
-            "title": item.find("a").text,
-            # 'http://www.tj.ustc.edu.cn' + '/2023/0614/c30734a605933/page.htm
-            "link": 'http://www.tj.ustc.edu.cn' + item.find("a")['href'],
-            "date": date
-        })
+        result.append(
+            {
+                "title": item.find("a").text,
+                # 'http://www.tj.ustc.edu.cn' + '/2023/0614/c30734a605933/page.htm
+                "link": "http://www.tj.ustc.edu.cn" + item.find("a")["href"],
+                "date": date,
+            }
+        )
     return result
 
 

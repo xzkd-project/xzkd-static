@@ -4,7 +4,7 @@ import shutil
 from curriculum import main as make_curriculum
 from rss import main as make_rss
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(base_dir, "build")
 

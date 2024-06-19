@@ -2,7 +2,7 @@ import jsonpickle
 from datetime import datetime, timedelta
 from pytz import timezone
 
-tz = timezone('Asia/Shanghai')
+tz = timezone("Asia/Shanghai")
 
 
 def raw_date_to_unix_timestamp(date_str: str) -> int:

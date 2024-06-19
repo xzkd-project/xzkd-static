@@ -19,26 +19,24 @@ from utils.tools import raw_date_to_unix_timestamp
 
 async def login(session: aiohttp.ClientSession):
     url = "https://jw.ustc.edu.cn/"
-    await session.get(
-        url,
-        headers=headers,
-        allow_redirects=False
-    )
+    await session.get(url, headers=headers, allow_redirects=False)
 
     url = "https://jw.ustc.edu.cn/ucas-sso/login"
-    await session.get(
-        url=url,
-        headers=headers,
-        allow_redirects=False
-    )
+    await session.get(url=url, headers=headers, allow_redirects=False)
 
     url = "https://passport.ustc.edu.cn/login?service=https%3A%2F%2Fjw.ustc.edu.cn%2Fucas-sso%2Flogin"
     token_pattern = re.compile(r"LT-[a-z0-9]+")
-    response = await session.get(
-        url=url,
-        allow_redirects=False
-    )
+    response = await session.get(url=url, allow_redirects=False)
     text = await response.text()
+    if response.status == 302:
+        url = response.headers["Location"]
+        response = await session.get(url=url, headers=headers, allow_redirects=False)
+
+        url = response.headers["Location"]
+        if not url == "https://jw.ustc.edu.cn/":
+            raise Exception("Login failed")
+        return
+
     cas_lt = token_pattern.findall(text)[0]
 
     url = "https://passport.ustc.edu.cn/validatecode.jsp?type=login"
@@ -54,23 +52,18 @@ async def login(session: aiohttp.ClientSession):
 
     url = "https://passport.ustc.edu.cn/login"
     response = await session.post(
-        url=url,
-        data=cas_login_data(cas_lt, lt),
-        allow_redirects=False
+        url=url, data=cas_login_data(cas_lt, lt), allow_redirects=False
     )
 
     url = response.headers["Location"]
-    response = await session.get(
-        url=url,
-        headers=headers,
-        allow_redirects=False
-    )
+    response = await session.get(url=url, headers=headers, allow_redirects=False)
 
     url = response.headers["Location"]
     if not url == "https://jw.ustc.edu.cn/":
         raise Exception("Login failed")
 
-indexStartTimes: dict[int: int] = {
+
+indexStartTimes: dict[int:int] = {
     1: 7 * 60 + 50,
     2: 8 * 60 + 40,
     3: 9 * 60 + 45,
@@ -83,11 +76,11 @@ indexStartTimes: dict[int: int] = {
     10: 17 * 60 + 35,
     11: 19 * 60 + 30,
     12: 20 * 60 + 20,
-    13: 21 * 60 + 10
+    13: 21 * 60 + 10,
 }
 
 # 0835 0925 0945 1030 1120 1445 1535 1555 1640 1730 2015 2105 2155
-endIndexTimes: dict[int: int] = {
+endIndexTimes: dict[int:int] = {
     1: 8 * 60 + 35,
     2: 9 * 60 + 25,
     3: 10 * 60 + 30,
@@ -100,11 +93,11 @@ endIndexTimes: dict[int: int] = {
     10: 18 * 60 + 20,
     11: 20 * 60 + 15,
     12: 21 * 60 + 5,
-    13: 21 * 60 + 55
+    13: 21 * 60 + 55,
 }
 
 
-def findNearestIndex(time: int, times: dict[int: int]) -> int:
+def findNearestIndex(time: int, times: dict[int:int]) -> int:
     map = {}
     for index, t in times.items():
         map[abs(time - t)] = index
@@ -141,7 +134,9 @@ def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
     return result
 
 
-async def update_lectures(session: aiohttp.ClientSession, course_list: list[Course]) -> list[Course]:
+async def update_lectures(
+    session: aiohttp.ClientSession, course_list: list[Course]
+) -> list[Course]:
     course_id_list = [course.id for course in course_list]
     url = "https://jw.ustc.edu.cn/ws/schedule-table/datum"
     data = {
@@ -151,46 +146,49 @@ async def update_lectures(session: aiohttp.ClientSession, course_list: list[Cour
         "Accept": "*/*",
         "Content-Type": "application/json;charset=UTF-8",
     }
-    r = await session.post(
-        url=url,
-        headers=_headers,
-        json=data,
-        allow_redirects=False
-    )
+    r = await session.post(url=url, headers=_headers, json=data, allow_redirects=False)
     json = await r.json()
     json = json["result"]
 
     for schedule_json in json["scheduleList"]:
-        course = [course for course in course_list if course.id ==
-                  schedule_json["lessonId"]][0]
+        course = [
+            course for course in course_list if course.id == schedule_json["lessonId"]
+        ][0]
 
         date = raw_date_to_unix_timestamp(schedule_json["date"])
         startHHMM = int(schedule_json["startTime"])
         endHHMM = int(schedule_json["endTime"])
 
-        startDate = date + int(startHHMM // 100) * \
-            3600 + int(startHHMM % 100) * 60
+        startDate = date + int(startHHMM // 100) * 3600 + int(startHHMM % 100) * 60
         endDate = date + int(endHHMM // 100) * 3600 + int(endHHMM % 100) * 60
 
-        location = schedule_json["room"]["nameZh"] if schedule_json["room"] else schedule_json["customPlace"]
+        location = (
+            schedule_json["room"]["nameZh"]
+            if schedule_json["room"]
+            else schedule_json["customPlace"]
+        )
         if not location:
             location = ""
 
         startIndex = findNearestIndex(
-            int(startHHMM // 100) * 60 + int(startHHMM % 100), indexStartTimes)
+            int(startHHMM // 100) * 60 + int(startHHMM % 100), indexStartTimes
+        )
         endIndex = findNearestIndex(
-            int(endHHMM // 100) * 60 + int(endHHMM % 100), endIndexTimes)
+            int(endHHMM // 100) * 60 + int(endHHMM % 100), endIndexTimes
+        )
 
         lecture = Lecture(
             startDate=startDate,
             endDate=endDate,
             name=course.name,
             location=location,
-            teacherName=schedule_json["personName"] if schedule_json["personName"] else "",
+            teacherName=(
+                schedule_json["personName"] if schedule_json["personName"] else ""
+            ),
             periods=schedule_json["periods"] if schedule_json["periods"] else 0,
             additionalInfo={},
             startIndex=startIndex,
-            endIndex=endIndex
+            endIndex=endIndex,
         )
 
         for course in course_list:

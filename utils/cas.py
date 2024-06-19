@@ -11,6 +11,7 @@ def cas_login_data(cas_lt: str, lt: str) -> json:
         "service": "https://jw.ustc.edu.cn/ucas-sso/login",
         "warn": "",
         "showCode": "1",
+        "resultInput": "",
         "qrcode": "",
         "username": USTC_PASSPORT_USERNAME,
         "password": USTC_PASSPORT_PASSWORD,

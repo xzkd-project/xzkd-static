@@ -9,6 +9,7 @@ import datetime
 
 from utils.tj_rss import tj_ustc_RSS
 
+
 async def get_and_clean_feed(url: str, path_to_save: str):
     feed = feedparser.parse(url)
 
@@ -18,14 +19,19 @@ async def get_and_clean_feed(url: str, path_to_save: str):
     new_feed = feedgenerator.Rss201rev2Feed(
         title=feed.feed.title,
         link=f"https://static.xzkd.online/rss/{path_to_save.split('/')[-1]}",
-        description=""
+        description="",
     )
 
     handler = html2text.HTML2Text()
     handler.ignore_links = True
     handler.ignore_images = True
 
-    for entry in tqdm(feed.entries, position=0, leave=True, desc=f"Processing {path_to_save.split('/')[-1]}"):
+    for entry in tqdm(
+        feed.entries,
+        position=0,
+        leave=True,
+        desc=f"Processing {path_to_save.split('/')[-1]}",
+    ):
         try:
             date_raw = entry.published
             try:
@@ -41,18 +47,18 @@ async def get_and_clean_feed(url: str, path_to_save: str):
                 title=entry.title,
                 link=entry.link,
                 description=description,
-                pubdate=date
+                pubdate=date,
             )
         except Exception as e:
             print(e)
 
-    with open(path_to_save, 'w') as f:
-        new_feed.write(f, 'utf-8')
+    with open(path_to_save, "w") as f:
+        new_feed.write(f, "utf-8")
 
 
 async def make_rss():
     # load ./rss-config.yaml
-    with open('rss-config.yaml', 'r') as f:
+    with open("rss-config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
     base_path = os.path.dirname(os.path.abspath(__file__))
@@ -63,13 +69,14 @@ async def make_rss():
 
     tj_ustc_RSS(rss_path)
 
-    for feed in tqdm(config['feeds'], position=1, leave=True, desc="Processing feeds"):
-        filepath = os.path.join(rss_path, feed['xmlFilename'])
-        await get_and_clean_feed(feed['url'], filepath)
+    for feed in tqdm(config["feeds"], position=1, leave=True, desc="Processing feeds"):
+        filepath = os.path.join(rss_path, feed["xmlFilename"])
+        await get_and_clean_feed(feed["url"], filepath)
 
 
 def main():
     asyncio.run(make_rss())
+
 
 if __name__ == "__main__":
     main()
