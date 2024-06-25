@@ -1,14 +1,12 @@
-class Lecture:
+class Exam:
     startDate: int  # unix timestamp
     endDate: int  # unix timestamp
     name: str
     location: str
-    teacherName: str
-    periods: float
-    startIndex: int
-    endIndex: int
+    examType: str  # 期中/期末
     startHHMM: int
     endHHMM: int
+    examMode: str  # 开卷/闭卷
     additionalInfo: dict[str, str]
 
     def __init__(
@@ -17,22 +15,18 @@ class Lecture:
         endDate: int,
         name: str,
         location: str,
-        teacherName: str,
-        periods: float,
-        startIndex: int,
-        endIndex: int,
+        examType: str,
         startHHMM: int,
         endHHMM: int,
+        examMode: str,
         additionalInfo: dict[str, str],
     ):
         self.startDate = startDate
         self.endDate = endDate
         self.name = name
         self.location = location
-        self.teacherName = teacherName
-        self.periods = periods
-        self.startIndex = startIndex
-        self.endIndex = endIndex
+        self.examType = examType
         self.startHHMM = startHHMM
         self.endHHMM = endHHMM
+        self.examMode = examMode
         self.additionalInfo = additionalInfo

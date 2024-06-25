@@ -189,6 +189,8 @@ async def update_lectures(
             additionalInfo={},
             startIndex=startIndex,
             endIndex=endIndex,
+            startHHMM=startHHMM,
+            endHHMM=endHHMM,
         )
 
         for course in course_list:

@@ -7,7 +7,7 @@ from tqdm import tqdm
 from models.course import Course
 
 from utils.catalog import login as catalog_login
-from utils.catalog import get_semesters, get_courses
+from utils.catalog import get_semesters, get_courses, get_exams
 from utils.jw import login as jw_login
 from utils.jw import update_lectures
 from utils.tools import save_json
@@ -45,6 +45,12 @@ async def fetch_semester(
     courses = await get_courses(session=session, semester_id=semester_id)
     save_json(courses, os.path.join(semester_path, "courses.json"))
 
+    if int(semester_id) >= 321:
+        exams = await get_exams(session=session, semester_id=semester_id)
+        for course in courses:
+            if course.id in exams.keys():
+                course.exams = exams[course.id]
+
     # set semaphore to 50, so that only 50 tasks can run concurrently
     sem = asyncio.Semaphore(50)
 
@@ -74,7 +80,7 @@ async def make_curriculum():
     curriculum_path = os.path.join(base_path, "build", "curriculum")
     course_api_path = os.path.join(base_path, "build", "api", "course")
     if not os.path.exists(curriculum_path):
-        os.mkdir(curriculum_path)
+        os.makedirs(curriculum_path)
 
     if not os.path.exists(course_api_path):
         os.makedirs(course_api_path)

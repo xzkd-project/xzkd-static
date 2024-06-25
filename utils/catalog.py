@@ -8,6 +8,7 @@ from io import BytesIO
 
 from models.semester import Semester
 from models.course import Course
+from models.exam import Exam
 
 from utils.cas import cas_login_data
 from utils.constants import cas_login_headers
@@ -18,11 +19,17 @@ from utils.tools import raw_date_to_unix_timestamp
 
 async def login(session: aiohttp.ClientSession):
     url = "https://passport.ustc.edu.cn/login"
-    await session.get(url, headers=headers, allow_redirects=False)
+    await session.get(
+        url,
+        headers=headers,
+        allow_redirects=False,
+    )
 
     url = "https://passport.ustc.edu.cn/login?service=https://catalog.ustc.edu.cn/ustc_cas_login?next=https://catalog.ustc.edu.cn/query/lesson"
-    token_pattern = re.compile(r"LT-[a-z0-9]+")
-    response = await session.get(url=url, allow_redirects=False)
+    response = await session.get(
+        url=url,
+        allow_redirects=False,
+    )
     text = await response.text()
 
     # if response is 302, then we are already logged in:
@@ -35,6 +42,7 @@ async def login(session: aiohttp.ClientSession):
         response = await session.get(url=url, headers=headers, allow_redirects=False)
         return
 
+    token_pattern = re.compile(r"LT-[a-z0-9]+")
     cas_lt = token_pattern.findall(text)[0]
 
     url = "https://passport.ustc.edu.cn/validatecode.jsp?type=login"
@@ -50,7 +58,13 @@ async def login(session: aiohttp.ClientSession):
 
     url = "https://passport.ustc.edu.cn/login"
     response = await session.post(
-        url=url, data=cas_login_data(cas_lt, lt, service="https://catalog.ustc.edu.cn/ustc_cas_login?next=https://catalog.ustc.edu.cn/query/lesson"), allow_redirects=False
+        url=url,
+        data=cas_login_data(
+            cas_lt,
+            lt,
+            service="https://catalog.ustc.edu.cn/ustc_cas_login?next=https://catalog.ustc.edu.cn/query/lesson",
+        ),
+        allow_redirects=False,
     )
 
     url = response.headers["Location"]
@@ -90,7 +104,9 @@ async def get_courses(session: aiohttp.ClientSession, semester_id: str) -> list[
     url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + semester_id
 
     response = await session.get(
-        url=url, headers=catalog_headers, allow_redirects=False
+        url=url,
+        headers=catalog_headers,
+        allow_redirects=False,
     )
     json = await response.json()
 
@@ -114,9 +130,71 @@ async def get_courses(session: aiohttp.ClientSession, semester_id: str) -> list[
                 lessonCode=course_json["code"],
                 teacherName=teachers,
                 lectures=[],
-                description=course_json["dateTimePlacePersonText"]["cn"],
+                exams=[],
+                dateTimePlacePersonText=course_json["dateTimePlacePersonText"]["cn"],
+                courseType=course_json["courseType"]["cn"],
+                courseGradation=course_json["courseGradation"]["cn"],
+                courseCategory=course_json["courseCategory"]["cn"],
+                educationType=course_json["education"]["cn"],
+                classType=course_json["classType"]["cn"],
+                openDepartment=course_json["openDepartment"]["cn"],
+                description="",
                 credit=course_json["credits"],
                 additionalInfo={},
             )
         )
+    return result
+
+
+async def get_exams(
+    session: aiohttp.ClientSession,
+    semester_id: str,
+) -> dict[str, list[Exam]]:
+    url = "https://catalog.ustc.edu.cn/api/teach/exam/list/" + semester_id
+
+    response = await session.get(
+        url=url,
+        headers=catalog_headers,
+        allow_redirects=False,
+    )
+    json = await response.json()
+
+    result = {}
+    for exam_json in json:
+        room_list = [room["room"] for room in exam_json["examRooms"]]
+        location = ", ".join(room_list)
+
+        date = raw_date_to_unix_timestamp(exam_json["examDate"])
+        startHHMM = int(exam_json["startTime"])
+        endHHMM = int(exam_json["endTime"])
+
+        startDate = date + int(startHHMM // 100) * 3600 + int(startHHMM % 100) * 60
+        endDate = date + int(endHHMM // 100) * 3600 + int(endHHMM % 100) * 60
+
+        examType = "Unknown"
+        if exam_json["examType"] == 1:
+            examType = "期中考试"
+        elif exam_json["examType"] == 2:
+            examType = "期末考试"
+        examMode = exam_json["examMode"]
+
+        name = exam_json["lesson"]["course"]["cn"]
+        id = exam_json["lesson"]["id"]
+
+        exam = Exam(
+            startDate=startDate,
+            endDate=endDate,
+            name=name,
+            location=location,
+            examType=examType,
+            startHHMM=startHHMM,
+            endHHMM=endHHMM,
+            examMode=examMode,
+            additionalInfo={},
+        )
+        if id in result:
+            result[id].append(exam)
+        else:
+            result[id] = [exam]
+
     return result
