@@ -80,8 +80,8 @@ async def make_curriculum():
         os.makedirs(course_api_path)
 
     async with aiohttp.ClientSession() as session:
-        await jw_login(session)
         await catalog_login(session)
+        await jw_login(session)
 
         semesters = await get_semesters(session=session)
         semesters = [

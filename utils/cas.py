@@ -4,11 +4,11 @@ import urllib.parse
 from utils.environs import USTC_PASSPORT_USERNAME, USTC_PASSPORT_PASSWORD
 
 
-def cas_login_data(cas_lt: str, lt: str) -> json:
+def cas_login_data(cas_lt: str, lt: str, service: str = "https://jw.ustc.edu.cn/ucas-sso/login") -> json:
     return {
         "model": "uplogin.jsp",
         "CAS_LT": cas_lt,
-        "service": "https://jw.ustc.edu.cn/ucas-sso/login",
+        "service": service,
         "warn": "",
         "showCode": "1",
         "resultInput": "",

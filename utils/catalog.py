@@ -35,8 +35,6 @@ async def login(session: aiohttp.ClientSession):
         response = await session.get(url=url, headers=headers, allow_redirects=False)
         return
 
-    # TODO: check wtf is going on why doesn't this work
-
     cas_lt = token_pattern.findall(text)[0]
 
     url = "https://passport.ustc.edu.cn/validatecode.jsp?type=login"
@@ -52,7 +50,7 @@ async def login(session: aiohttp.ClientSession):
 
     url = "https://passport.ustc.edu.cn/login"
     response = await session.post(
-        url=url, data=cas_login_data(cas_lt, lt), allow_redirects=False
+        url=url, data=cas_login_data(cas_lt, lt, service="https://catalog.ustc.edu.cn/ustc_cas_login?next=https://catalog.ustc.edu.cn/query/lesson"), allow_redirects=False
     )
 
     url = response.headers["Location"]
