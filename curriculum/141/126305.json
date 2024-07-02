@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126305,
+    "name": "\u5b8f\u89c2\u7ecf\u6d4e\u5206\u6790",
+    "courseCode": "MBA1002",
+    "lessonCode": "MBA1002.01",
+    "teacherName": "\u5468\u5782\u65e5",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1583887140,
+            "endDate": 1583919660,
+            "name": "\u5b8f\u89c2\u7ecf\u6d4e\u5206\u6790",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c301",
+            "teacherName": "\u5468\u5782\u65e5",
+            "periods": 8,
+            "startIndex": 2,
+            "endIndex": 9,
+            "startHHMM": 839,
+            "endHHMM": 1741,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1586911140,
+            "endDate": 1586943660,
+            "name": "\u5b8f\u89c2\u7ecf\u6d4e\u5206\u6790",
+            "location": "\u56fd\u91d1\u96621\u53f7\u697c301",
+            "teacherName": "\u5468\u5782\u65e5",
+            "periods": 8,
+            "startIndex": 2,
+            "endIndex": 9,
+            "startHHMM": 839,
+            "endHHMM": 1741,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "4,9\u5468 \u56fd\u91d1\u96621\u53f7\u697c301 :3(08:39~17:41) \u5468\u5782\u65e5",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u7855\u58eb",
+    "courseCategory": "\u4e13\u4e1a\u7855\u58eb",
+    "educationType": "\u7814\u7a76\u751f",
+    "classType": "\u4e13\u4e1a",
+    "openDepartment": "MBA\u4e2d\u5fc3",
+    "description": "",
+    "credit": 2,
+    "additionalInfo": {}
+}

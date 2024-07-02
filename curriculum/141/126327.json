@@ -1,0 +1,35 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126327,
+    "name": "\u8fd0\u8425\u7ba1\u7406",
+    "courseCode": "MBA0043",
+    "lessonCode": "MBA0043.01",
+    "teacherName": "\u4e01\u658c",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1592095200,
+            "endDate": 1592128200,
+            "name": "\u8fd0\u8425\u7ba1\u7406",
+            "location": "\u56fd\u91d1\u96622\u53f7\u697c301",
+            "teacherName": "\u4e01\u658c",
+            "periods": 60,
+            "startIndex": 2,
+            "endIndex": 9,
+            "startHHMM": 840,
+            "endHHMM": 1750,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "18\u5468 \u56fd\u91d1\u96622\u53f7\u697c301 :7(08:40~17:50) \u4e01\u658c",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u7855\u58eb",
+    "courseCategory": "\u7814\u7a76\u751f\u8bfe\u7a0b",
+    "educationType": "\u7814\u7a76\u751f",
+    "classType": "\u57fa\u7840",
+    "openDepartment": "MBA\u4e2d\u5fc3",
+    "description": "",
+    "credit": 3,
+    "additionalInfo": {}
+}
