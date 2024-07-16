@@ -1,17 +1,25 @@
 import json
 import urllib.parse
 
-from utils.environs import USTC_PASSPORT_USERNAME, USTC_PASSPORT_PASSWORD
+from utils.environs import (
+    USTC_PASSPORT_USERNAME,
+    USTC_PASSPORT_PASSWORD,
+    USTC_PASSPORT_FINGERPRINT,
+)
 
 
-def cas_login_data(cas_lt: str, lt: str, service: str = "https://jw.ustc.edu.cn/ucas-sso/login") -> json:
+def cas_login_data(
+    cas_lt: str,
+    lt: str,
+    service: str = "https://jw.ustc.edu.cn/ucas-sso/login",
+) -> json:
     return {
         "model": "uplogin.jsp",
         "CAS_LT": cas_lt,
         "service": service,
         "warn": "",
         "showCode": "1",
-        "resultInput": "",
+        "resultInput": USTC_PASSPORT_FINGERPRINT,
         "qrcode": "",
         "username": USTC_PASSPORT_USERNAME,
         "password": USTC_PASSPORT_PASSWORD,

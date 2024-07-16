@@ -11,6 +11,7 @@ from utils.catalog import get_semesters, get_courses, get_exams
 from utils.jw import login as jw_login
 from utils.jw import update_lectures
 from utils.tools import save_json
+from utils.environs import USTC_PASSPORT_DEVICE_ID
 
 
 async def fetch_course_info(
@@ -85,7 +86,12 @@ async def make_curriculum():
     if not os.path.exists(course_api_path):
         os.makedirs(course_api_path)
 
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession(
+        cookies={
+            "device": USTC_PASSPORT_DEVICE_ID,
+        },
+        trust_env=True,
+    ) as session:
         await catalog_login(session)
         await jw_login(session)
 
