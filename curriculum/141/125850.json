@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 125850,
+    "name": "\u5fb7\u8bed(\u4e0b)",
+    "courseCode": "FL05204",
+    "lessonCode": "FL05204.01",
+    "teacherName": "\u5f90\u7b71\u6625",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1582524000,
+            "endDate": 1582529700,
+            "name": "\u5fb7\u8bed(\u4e0b)",
+            "location": "2403",
+            "teacherName": "\u5f90\u7b71\u6625",
+            "periods": 2,
+            "startIndex": 6,
+            "endIndex": 7,
+            "startHHMM": 1400,
+            "endHHMM": 1535,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1582783200,
+            "endDate": 1582788900,
+            "name": "\u5fb7\u8bed(\u4e0b)",
+            "location": "2403",
+            "teacherName": "\u5f90\u7b71\u6625",
+            "periods": 2,
+            "startIndex": 6,
+            "endIndex": 7,
+            "startHHMM": 1400,
+            "endHHMM": 1535,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "2\u5468 2403 :1(6,7) \u5f90\u7b71\u6625\n2\u5468 2403 :4(6,7) \u5f90\u7b71\u6625",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u7855\u58eb",
+    "courseCategory": "\u7814\u7a76\u751f\u8bfe\u7a0b",
+    "educationType": "\u7814\u7a76\u751f",
+    "classType": "\u516c\u9009\u8bfe",
+    "openDepartment": "\u5916\u8bed\u7cfb",
+    "description": "",
+    "credit": 2,
+    "additionalInfo": {}
+}

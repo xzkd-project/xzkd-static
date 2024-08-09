@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126290,
+    "name": "\u6b27\u6d32\u6587\u660e\u7684\u73b0\u4ee3\u5386\u7a0b",
+    "courseCode": "HS1577M",
+    "lessonCode": "HS1577M.01",
+    "teacherName": "\u6155\u8bfe\u6559\u5e08",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1586430000,
+            "endDate": 1586437200,
+            "name": "\u6b27\u6d32\u6587\u660e\u7684\u73b0\u4ee3\u5386\u7a0b",
+            "location": "5301",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "startIndex": 11,
+            "endIndex": 12,
+            "startHHMM": 1900,
+            "endHHMM": 2100,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1587034800,
+            "endDate": 1587042000,
+            "name": "\u6b27\u6d32\u6587\u660e\u7684\u73b0\u4ee3\u5386\u7a0b",
+            "location": "5301",
+            "teacherName": "\u6155\u8bfe\u6559\u5e08",
+            "periods": 3,
+            "startIndex": 11,
+            "endIndex": 12,
+            "startHHMM": 1900,
+            "endHHMM": 2100,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "8~9\u5468 5301 :4(19:00~21:00) \u6155\u8bfe\u6559\u5e08",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u901a\u4fee",
+    "courseCategory": "\u6838\u5fc3\u901a\u8bc6",
+    "educationType": "\u672c\u79d1",
+    "classType": "\u6155\u8bfe\u901a\u8bc6",
+    "openDepartment": "\u4eba\u6587\u4e0e\u793e\u4f1a\u79d1\u5b66\u5b66\u9662",
+    "description": "",
+    "credit": 2,
+    "additionalInfo": {}
+}

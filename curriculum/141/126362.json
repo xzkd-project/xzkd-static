@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126362,
+    "name": "\u751f\u4ea7\u8fd0\u4f5c",
+    "courseCode": "G430140318",
+    "lessonCode": "G430140318.01",
+    "teacherName": "\u4e01\u658c",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1591404000,
+            "endDate": 1591437000,
+            "name": "\u751f\u4ea7\u8fd0\u4f5c",
+            "location": "\u7ba1\u7406\u79d1\u7814\u697c801",
+            "teacherName": "\u4e01\u658c",
+            "periods": 20,
+            "startIndex": 2,
+            "endIndex": 9,
+            "startHHMM": 840,
+            "endHHMM": 1750,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1591490400,
+            "endDate": 1591523400,
+            "name": "\u751f\u4ea7\u8fd0\u4f5c",
+            "location": "\u7ba1\u7406\u79d1\u7814\u697c801",
+            "teacherName": "\u4e01\u658c",
+            "periods": 20,
+            "startIndex": 2,
+            "endIndex": 9,
+            "startHHMM": 840,
+            "endHHMM": 1750,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "16\u5468 \u7ba1\u7406\u79d1\u7814\u697c801 :6(08:40~17:50) \u4e01\u658c\n17\u5468 \u7ba1\u7406\u79d1\u7814\u697c801 :7(08:40~17:50) \u4e01\u658c",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u7855\u58eb",
+    "courseCategory": "\u4e13\u4e1a\u7855\u58eb",
+    "educationType": "\u7814\u7a76\u751f",
+    "classType": "\u4e13\u4e1a",
+    "openDepartment": "\u9879\u76ee\u7ba1\u7406\u6559\u80b2\u4e2d\u5fc3",
+    "description": "",
+    "credit": 2,
+    "additionalInfo": {}
+}
