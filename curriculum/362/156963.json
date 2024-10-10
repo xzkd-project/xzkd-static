@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 156963,
+    "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+    "courseCode": "FS1001",
+    "lessonCode": "FS1001.71",
+    "teacherName": "\u6768\u8fea",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1726376400,
+            "endDate": 1726381800,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "\u7ba1\u7406\u79d1\u7814\u697c1623",
+            "teacherName": "\u6768\u8fea",
+            "periods": 0,
+            "startIndex": 6,
+            "endIndex": 6,
+            "startHHMM": 1300,
+            "endHHMM": 1430,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1727505000,
+            "endDate": 1727510400,
+            "name": "\u201c\u79d1\u5b66\u4e0e\u793e\u4f1a\u201d\u7814\u8ba8\u8bfe",
+            "location": "5405",
+            "teacherName": "\u6768\u8fea",
+            "periods": 1,
+            "startIndex": 7,
+            "endIndex": 7,
+            "startHHMM": 1430,
+            "endHHMM": 1600,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "4\u5468 5405 :6(14:30~16:00) \u6768\u8fea\n3\u5468 \u7ba1\u7406\u79d1\u7814\u697c1623 :7(13:00~14:30) \u6768\u8fea",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u901a\u4fee",
+    "courseCategory": "\u672c\u79d1\u8ba1\u5212\u5185\u8bfe\u7a0b",
+    "educationType": "\u672c\u79d1",
+    "classType": "\u79d1\u5b66\u4e0e\u793e\u4f1a",
+    "openDepartment": "\u6570\u5b66\u79d1\u5b66\u5b66\u9662",
+    "description": "",
+    "credit": 1,
+    "additionalInfo": {}
+}

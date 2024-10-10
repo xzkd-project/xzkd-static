@@ -1,0 +1,35 @@
+{
+    "py/object": "models.course.Course",
+    "id": 126051,
+    "name": "\u7814\u7a76\u751f\u7efc\u5408\u82f1\u8bed",
+    "courseCode": "FL05301",
+    "lessonCode": "FL05301.08",
+    "teacherName": "\u90a2\u9e3f\u98de",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1582178400,
+            "endDate": 1582184100,
+            "name": "\u7814\u7a76\u751f\u7efc\u5408\u82f1\u8bed",
+            "location": "5104",
+            "teacherName": "\u90a2\u9e3f\u98de",
+            "periods": 2,
+            "startIndex": 6,
+            "endIndex": 7,
+            "startHHMM": 1400,
+            "endHHMM": 1535,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "1\u5468 5104 :4(6,7) \u90a2\u9e3f\u98de",
+    "courseType": "\u7406\u8bba\u8bfe",
+    "courseGradation": "\u7855\u58eb",
+    "courseCategory": "\u7814\u7a76\u751f\u8bfe\u7a0b",
+    "educationType": "\u7814\u7a76\u751f",
+    "classType": "\u82f1\u8bed\u8bfe",
+    "openDepartment": "\u5916\u8bed\u7cfb",
+    "description": "",
+    "credit": 2,
+    "additionalInfo": {}
+}

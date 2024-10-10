@@ -1,0 +1,49 @@
+{
+    "py/object": "models.course.Course",
+    "id": 130165,
+    "name": "\u5730\u7403\u63a2\u7d22\u4e0e\u91ce\u5916\u8003\u5bdfI",
+    "courseCode": "ESS1506",
+    "lessonCode": "ESS1506.01",
+    "teacherName": "\u9a6c\u660e, \u8881\u4ec1\u6c11, \u859b\u5411\u8f89, \u90d1\u5efa\u79cb, \u6f58\u5b97\u6d69",
+    "lectures": [
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1607125800,
+            "endDate": 1607163600,
+            "name": "\u5730\u7403\u63a2\u7d22\u4e0e\u91ce\u5916\u8003\u5bdfI",
+            "location": "",
+            "teacherName": "\u859b\u5411\u8f89,\u9a6c\u660e,\u8881\u4ec1\u6c11,\u90d1\u5efa\u79cb,\u6f58\u5b97\u6d69",
+            "periods": 10,
+            "startIndex": 1,
+            "endIndex": 10,
+            "startHHMM": 750,
+            "endHHMM": 1820,
+            "additionalInfo": {}
+        },
+        {
+            "py/object": "models.lecture.Lecture",
+            "startDate": 1608940200,
+            "endDate": 1608955800,
+            "name": "\u5730\u7403\u63a2\u7d22\u4e0e\u91ce\u5916\u8003\u5bdfI",
+            "location": "",
+            "teacherName": "\u9a6c\u660e",
+            "periods": 5,
+            "startIndex": 1,
+            "endIndex": 5,
+            "startHHMM": 750,
+            "endHHMM": 1210,
+            "additionalInfo": {}
+        }
+    ],
+    "exams": [],
+    "dateTimePlacePersonText": "15\u5468 null :6(1,2,3,4,5) \u9a6c\u660e\n12\u5468 null :6(1,2,3,4,5,6,7,8,9,10) \u859b\u5411\u8f89\n12\u5468 null :6(1,2,3,4,5,6,7,8,9,10) \u9a6c\u660e\n12\u5468 null :6(1,2,3,4,5,6,7,8,9,10) \u8881\u4ec1\u6c11\n12\u5468 null :6(1,2,3,4,5,6,7,8,9,10) \u90d1\u5efa\u79cb\n12\u5468 null :6(1,2,3,4,5,6,7,8,9,10) \u6f58\u5b97\u6d69",
+    "courseType": "\u5b9e\u9a8c\u8bfe",
+    "courseGradation": "\u81ea\u7531\u9009\u4fee",
+    "courseCategory": "\u7d20\u80fd\u62d3\u5c55\u8bfe\u7a0b",
+    "educationType": "\u672c\u79d1",
+    "classType": "\u901a\u8bc6",
+    "openDepartment": "\u5730\u7403\u548c\u7a7a\u95f4\u79d1\u5b66\u5b66\u9662",
+    "description": "",
+    "credit": 0.5,
+    "additionalInfo": {}
+}
