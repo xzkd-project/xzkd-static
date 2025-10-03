@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 USTC_PASSPORT_USERNAME = os.environ["USTC_PASSPORT_USERNAME"]
 USTC_PASSPORT_PASSWORD = os.environ["USTC_PASSPORT_PASSWORD"]
