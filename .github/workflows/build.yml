@@ -25,15 +25,12 @@ jobs:
       - name: Checkout gh-pages
         uses: actions/checkout@v3
         with:
-          set-safe-directory: ''
+          set-safe-directory: ""
           repository: ${{ github.repository }}
           ref: gh-pages
           path: build
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v3
-        with:
-          python-version: "3.10"
-          cache: "pip"
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v6
       - name: Reset build to initial state
         run: |
           cd build
@@ -43,12 +40,12 @@ jobs:
           cd ..
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          playwright install chromium
           sudo apt update
           sudo apt-get install tesseract-ocr
+          uv sync
+          uv run playwright install chromium
       - name: Run Program
+        continue-on-error: true
         env:
           TZ: "Asia/Shanghai"
           USTC_PASSPORT_USERNAME: ${{ secrets.USTC_PASSPORT_USERNAME }}
@@ -56,7 +53,7 @@ jobs:
           USTC_PASSPORT_FINGERPRINT: ${{ secrets.USTC_PASSPORT_FINGERPRINT }}
           USTC_PASSPORT_DEVICE_ID: ${{ secrets.USTC_PASSPORT_DEVICE_ID }}
         run: |
-          python main.py
+          uv run python main.py
       - name: Publish to gh-pages
         run: |
           cd build
