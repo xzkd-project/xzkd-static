@@ -1,0 +1,27 @@
+[project]
+name = "static"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp>=3.12.15",
+    "asyncio>=4.0.0",
+    "bs4>=0.0.2",
+    "dotenv>=0.9.9",
+    "feedgen>=1.0.0",
+    "feedgenerator>=2.2.1",
+    "feedparser>=6.0.12",
+    "html2text>=2025.4.15",
+    "jsonpickle>=4.1.1",
+    "numpy<2",
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.3.0",
+    "playwright>=1.55.0",
+    "pytesseract>=0.3.13",
+    "pytz>=2025.2",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.5",
+    "tqdm>=4.67.1",
+    "urllib3>=2.5.0",
+]
