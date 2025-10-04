@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: |
           uv sync
-          uv run playwright install chromium
+          uv run patchright install chromium
       - name: Run Program
         continue-on-error: true
         env:
