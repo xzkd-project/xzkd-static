@@ -40,8 +40,6 @@ jobs:
           cd ..
       - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt-get install tesseract-ocr
           uv sync
           uv run playwright install chromium
       - name: Run Program
@@ -50,8 +48,10 @@ jobs:
           TZ: "Asia/Shanghai"
           USTC_PASSPORT_USERNAME: ${{ secrets.USTC_PASSPORT_USERNAME }}
           USTC_PASSPORT_PASSWORD: ${{ secrets.USTC_PASSPORT_PASSWORD }}
-          USTC_PASSPORT_FINGERPRINT: ${{ secrets.USTC_PASSPORT_FINGERPRINT }}
-          USTC_PASSPORT_DEVICE_ID: ${{ secrets.USTC_PASSPORT_DEVICE_ID }}
+          USTC_PASSPORT_TOTP_URL: ${{ secrets.USTC_PASSPORT_TOTP_URL }}
+          HTTP_PROXY_URL: ${{ secrets.HTTP_PROXY_URL }}
+          HTTP_PROXY_USERNAME: ${{ secrets.HTTP_PROXY_USERNAME }}
+          HTTP_PROXY_PASSWORD: ${{ secrets.HTTP_PROXY_PASSWORD }}
         run: |
           uv run python main.py
       - name: Publish to gh-pages
