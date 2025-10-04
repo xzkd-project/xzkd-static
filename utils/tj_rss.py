@@ -6,9 +6,10 @@ Save rss to outputDir/tj_ustc.xml
 
 import datetime
 import os
+from typing import cast
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from feedgen.feed import FeedGenerator
 from requests.adapters import HTTPAdapter
 
@@ -20,46 +21,6 @@ headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57",
 }
-
-"""
-HTML looks like this:
-```html
-<body>
-<div class="section page-xstzcs">
-<div class="container clearfix">
-<div class="content pull-right">
-<div class="content-body">
-<div frag="面板5">
-<div frag="窗口5" portletmode="simpleList" >
-<div id="wp_news_w5">
-<ul>
-    <li class="item">
-        <a href="/2023/0614/c30734a605933/page.htm"><a href='/2023/0614/c30734a605933/page.htm' target='_blank' title='我校羽毛球队包揽首届安徽省高校羽毛球交流赛冠亚军'>我校羽毛球队包揽首届安徽省高校羽毛球交流赛冠亚军</a></a>
-        <time>2023-06-14</time>
-    </li>
-    <li class="item">
-        <a href="/2023/0613/c30734a605794/page.htm"><a href='/2023/0613/c30734a605794/page.htm' target='_blank' title='体育教学中心教师参加第五届中国体育非物质文化遗产大会并作专题报告'>体育教学中心教师参加第五届中国体育非物质文化遗产大会并作专题...</a></a>
-        <time>2023-06-13</time>
-    </li>
-```
-(Unnecessary parts are omitted)
-
-First we need to parse a given html string like this one to a list like this:
-```python
-[
-    {
-        "title": "我校羽毛球队包揽首届安徽省高校羽毛球交流赛冠亚军",
-        "link": "http://www.tj.ustc.edu.cn/2023/0614/c30734a605933/page.htm",
-        "date": <datetime.datetime object>
-    },
-    {
-        "title": "体育教学中心教师参加第五届中国体育非物质文化遗产大会并作专题报告",
-        "link": "http://www.tj.ustc.edu.cn/2023/0613/c30734a605794/page.htm",
-        "date": <datetime.datetime object>
-    },
-    ...
-]
-"""
 
 
 def parseHTML(html: str):
@@ -73,21 +34,38 @@ def parseHTML(html: str):
     :raises: None
     """
     soup = BeautifulSoup(html, "html.parser")
-    ul = soup.find("div", {"id": "wp_news_w5"}).find("ul")
+    div = soup.find("div", {"id": "wp_news_w5"})
+    if not div or not isinstance(div, Tag):
+        return []
+
+    ul = div.find("ul")
+    if not ul or not isinstance(ul, Tag):
+        return []
+
     items = ul.find_all("li", {"class": "item"})
     result = []
     for item in items:
-        date_raw = item.find("time").text
+        if not isinstance(item, Tag):
+            continue
+
+        time_tag = item.find("time")
+        if not time_tag or not isinstance(time_tag, Tag):
+            continue
+        date_raw = time_tag.text
 
         date = datetime.datetime.strptime(date_raw, "%Y-%m-%d").astimezone(
             tz=datetime.timezone(datetime.timedelta(hours=8))
         )
 
+        a_tag = item.find("a")
+        if not a_tag or not isinstance(a_tag, Tag):
+            continue
+
         result.append(
             {
-                "title": item.find("a").text,
+                "title": a_tag.text,
                 # 'http://www.tj.ustc.edu.cn' + '/2023/0614/c30734a605933/page.htm
-                "link": "http://www.tj.ustc.edu.cn" + item.find("a")["href"],
+                "link": "http://www.tj.ustc.edu.cn" + cast(str, a_tag.get("href", "")),
                 "date": date,
             }
         )

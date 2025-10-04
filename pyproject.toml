@@ -16,12 +16,21 @@ dependencies = [
     "jsonpickle>=4.1.1",
     "numpy<2",
     "opencv-python>=4.11.0.86",
+    "pandas>=2.3.3",
+    "patchright>=1.55.2",
     "pillow>=11.3.0",
-    "playwright>=1.55.0",
+    "pyotp>=2.9.0",
     "pytesseract>=0.3.13",
     "pytz>=2025.2",
     "pyyaml>=6.0.2",
     "requests>=2.32.5",
     "tqdm>=4.67.1",
     "urllib3>=2.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.6.0",
+    "jupyter>=1.1.1",
+    "notebook>=7.4.7",
 ]

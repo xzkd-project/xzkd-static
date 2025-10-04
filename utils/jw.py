@@ -1,69 +1,10 @@
-import re
+from patchright.async_api import Page
 
-from io import BytesIO
-from PIL import Image
-import cv2
-import numpy as np
-import pytesseract
-
-import aiohttp
-
-from models.course import Course
-from models.lecture import Lecture
-
-from utils.cas import cas_login_data
-from utils.constants import cas_login_headers
-from utils.constants import normal_headers as headers
+from models import Course, Lecture
 from utils.tools import raw_date_to_unix_timestamp
 
 
-async def login(session: aiohttp.ClientSession):
-    url = "https://jw.ustc.edu.cn/"
-    await session.get(url, headers=headers, allow_redirects=False)
-
-    url = "https://jw.ustc.edu.cn/ucas-sso/login"
-    await session.get(url=url, headers=headers, allow_redirects=False)
-
-    url = "https://passport.ustc.edu.cn/login?service=https%3A%2F%2Fjw.ustc.edu.cn%2Fucas-sso%2Flogin"
-    token_pattern = re.compile(r"LT-[a-z0-9]+")
-    response = await session.get(url=url, allow_redirects=False)
-    text = await response.text()
-    if response.status == 302:
-        url = response.headers["Location"]
-        response = await session.get(url=url, headers=headers, allow_redirects=False)
-
-        url = response.headers["Location"]
-        if not url == "https://jw.ustc.edu.cn/":
-            raise Exception("Login failed")
-        return
-
-    cas_lt = token_pattern.findall(text)[0]
-
-    url = "https://passport.ustc.edu.cn/validatecode.jsp?type=login"
-    response = await session.get(
-        url=url,
-    )
-    image = Image.open(BytesIO(await response.read()))
-    image = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
-    kernel = np.ones((3, 3), np.uint8)
-    image = cv2.dilate(image, kernel, iterations=1)
-    image = cv2.erode(image, kernel, iterations=1)
-    lt = pytesseract.image_to_string(Image.fromarray(image))[0:4]
-
-    url = "https://passport.ustc.edu.cn/login"
-    response = await session.post(
-        url=url, data=cas_login_data(cas_lt, lt), allow_redirects=False
-    )
-
-    url = response.headers["Location"]
-    response = await session.get(url=url, headers=headers, allow_redirects=False)
-
-    url = response.headers["Location"]
-    if not url == "https://jw.ustc.edu.cn/":
-        raise Exception("Login failed")
-
-
-indexStartTimes: dict[int:int] = {
+indexStartTimes: dict[int, int] = {
     1: 7 * 60 + 50,
     2: 8 * 60 + 40,
     3: 9 * 60 + 45,
@@ -80,7 +21,7 @@ indexStartTimes: dict[int:int] = {
 }
 
 # 0835 0925 0945 1030 1120 1445 1535 1555 1640 1730 2015 2105 2155
-endIndexTimes: dict[int:int] = {
+endIndexTimes: dict[int, int] = {
     1: 8 * 60 + 35,
     2: 9 * 60 + 25,
     3: 10 * 60 + 30,
@@ -97,7 +38,7 @@ endIndexTimes: dict[int:int] = {
 }
 
 
-def findNearestIndex(time: int, times: dict[int:int]) -> int:
+def findNearestIndex(time: int, times: dict[int, int]) -> int:
     map = {}
     for index, t in times.items():
         map[abs(time - t)] = index
@@ -134,19 +75,12 @@ def cleanLectures(lectures: list[Lecture]) -> list[Lecture]:
     return result
 
 
-async def update_lectures(
-    session: aiohttp.ClientSession, course_list: list[Course]
-) -> list[Course]:
+async def update_lectures(page: Page, course_list: list[Course]) -> list[Course]:
     course_id_list = [course.id for course in course_list]
-    url = "https://jw.ustc.edu.cn/ws/schedule-table/datum"
-    data = {
-        "lessonIds": course_id_list,
-    }
-    _headers = headers | {
-        "Accept": "*/*",
-        "Content-Type": "application/json;charset=UTF-8",
-    }
-    r = await session.post(url=url, headers=_headers, json=data, allow_redirects=False)
+    r = await page.request.post(
+        url="https://jw.ustc.edu.cn/ws/schedule-table/datum",
+        data={"lessonIds": course_id_list},
+    )
     json = await r.json()
     json = json["result"]
 

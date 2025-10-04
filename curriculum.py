@@ -1,21 +1,17 @@
 import asyncio
 import os
-
-import aiohttp
 from tqdm import tqdm
+from patchright.async_api import Page
 
 from models.course import Course
-
-from utils.catalog import login as catalog_login
 from utils.catalog import get_semesters, get_courses, get_exams
-from utils.jw import login as jw_login
 from utils.jw import update_lectures
 from utils.tools import save_json
-from utils.environs import USTC_PASSPORT_DEVICE_ID
+from utils.auth import USTCAuth
 
 
 async def fetch_course_info(
-    session: aiohttp.ClientSession,
+    page: Page,
     semester_path: str,
     _courses: list[Course],
     sem,
@@ -23,7 +19,7 @@ async def fetch_course_info(
     course_api_path: str,
 ):
     async with sem:
-        _courses = await update_lectures(session, _courses)
+        _courses = await update_lectures(page, _courses)
 
         for _course in _courses:
             save_json(_course, os.path.join(semester_path, f"{_course.id}.json"))
@@ -33,7 +29,7 @@ async def fetch_course_info(
 
 
 async def fetch_semester(
-    session: aiohttp.ClientSession,
+    page: Page,
     curriculum_path: str,
     semester_id: str,
     course_api_path: str,
@@ -43,31 +39,31 @@ async def fetch_semester(
     if not os.path.exists(semester_path):
         os.mkdir(semester_path)
 
-    courses = await get_courses(session=session, semester_id=semester_id)
+    courses = await get_courses(page=page, semester_id=semester_id)
     save_json(courses, os.path.join(semester_path, "courses.json"))
 
     if int(semester_id) >= 321:
-        exams = await get_exams(session=session, semester_id=semester_id)
+        exams = await get_exams(page=page, semester_id=semester_id)
         for course in courses:
             if course.id in exams.keys():
                 course.exams = exams[course.id]
 
-    # set semaphore to 50, so that only 50 tasks can run concurrently
     sem = asyncio.Semaphore(50)
-
-    # create a progress bar explicitly in async context
     progress_bar = tqdm(
         total=len(courses),
         position=0,
         leave=True,
         desc=f"Processing semester id={semester_id}",
     )
-
-    # split into chunks of 50 courses, and fetch them concurrently
     course_chunks = [courses[i : i + 50] for i in range(0, len(courses), 50)]
     tasks = [
         fetch_course_info(
-            session, semester_path, _courses, sem, progress_bar, course_api_path
+            page,
+            semester_path,
+            _courses,
+            sem,
+            progress_bar,
+            course_api_path,
         )
         for _courses in course_chunks
     ]
@@ -86,26 +82,22 @@ async def make_curriculum():
     if not os.path.exists(course_api_path):
         os.makedirs(course_api_path)
 
-    async with aiohttp.ClientSession(
-        cookies={
-            "device": USTC_PASSPORT_DEVICE_ID,
-        },
-        trust_env=True,
-    ) as session:
-        await catalog_login(session)
-        await jw_login(session)
-
-        semesters = await get_semesters(session=session)
+    async with USTCAuth() as page:
+        semesters = await get_semesters(page=page)
         semesters = [
-            semester for semester in semesters if int(semester.id) >= 141
-        ]  # dropping semester before 2019
+            semester for semester in semesters if int(semester.id) >= 381
+        ]  # dropping semester before 2025
+
         save_json(semesters, os.path.join(curriculum_path, "semesters.json"))
 
         for semester in tqdm(
-            semesters, position=1, leave=True, desc="Processing semesters"
+            semesters,
+            position=1,
+            leave=True,
+            desc="Processing semesters",
         ):
             await fetch_semester(
-                session, curriculum_path, str(semester.id), course_api_path
+                page, curriculum_path, str(semester.id), course_api_path
             )
 
 

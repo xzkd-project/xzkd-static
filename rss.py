@@ -6,6 +6,7 @@ import asyncio
 from tqdm import tqdm
 import feedgenerator
 import datetime
+from typing import cast
 
 from utils.tj_rss import tj_ustc_RSS
 
@@ -16,8 +17,9 @@ async def get_and_clean_feed(url: str, path_to_save: str):
     if not feed.entries:
         return
 
+    feed_title = getattr(feed.feed, "title", "RSS Feed")
     new_feed = feedgenerator.Rss201rev2Feed(
-        title=feed.feed.title,
+        title=cast(str, feed_title),
         link=f"https://static.xzkd.online/rss/{path_to_save.split('/')[-1]}",
         description="",
     )
@@ -33,7 +35,7 @@ async def get_and_clean_feed(url: str, path_to_save: str):
         desc=f"Processing {path_to_save.split('/')[-1]}",
     ):
         try:
-            date_raw = entry.published
+            date_raw = str(getattr(entry, "published", ""))
             try:
                 # Tue, 10 Aug 2021 00:00:00 GMT
                 date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %Z")
@@ -41,7 +43,7 @@ async def get_and_clean_feed(url: str, path_to_save: str):
                 # Tue, 10 Aug 2021 00:00:00 +0800
                 date = datetime.datetime.strptime(date_raw, "%a, %d %b %Y %H:%M:%S %z")
 
-            description = handler.handle(entry.description)
+            description = handler.handle(str(getattr(entry, "description", "")))
 
             new_feed.add_item(
                 title=entry.title,
