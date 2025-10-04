@@ -85,10 +85,12 @@ class USTCAuth:
             raise RuntimeError("Page not initialized")
 
         # Login to id.ustc.edu.cn
-        await self.page.goto("https://id.ustc.edu.cn", wait_until="networkidle")
+        await self.page.goto(
+            "https://id.ustc.edu.cn", wait_until="networkidle", timeout=0
+        )
         await self.page.fill('input[name="username"]', self.username)
         await self.page.fill('input[type="password"]', self.password)
-        await self.page.click('button[id="submitBtn"]')
+        await self.page.click('button[id="submitBtn"]', timeout=0)
         await self.page.wait_for_timeout(10 * 1000)
         await self.page.wait_for_load_state("networkidle")
 
@@ -96,7 +98,7 @@ class USTCAuth:
             await self.page.click("text=动态口令")
             totp_code = self.totp.now()  # type: ignore
             await self.page.fill('input[placeholder="请输入动态口令"]', totp_code)
-            await self.page.click('button[type="submit"]')
+            await self.page.click('button[type="submit"]', timeout=0)
             await self.page.wait_for_timeout(10 * 1000)
             await self.page.wait_for_load_state("networkidle")
 
@@ -104,10 +106,12 @@ class USTCAuth:
         await self.page.goto(
             "https://passport.ustc.edu.cn/login?service=https://catalog.ustc.edu.cn/ustc_cas_login?next=https://catalog.ustc.edu.cn/",
             wait_until="networkidle",
+            timeout=0,
         )
 
         # Login to jw.ustc.edu.cn
         await self.page.goto(
             "https://passport.ustc.edu.cn/login?service=https%3A%2F%2Fjw.ustc.edu.cn%2Fucas-sso%2Flogin",
             wait_until="networkidle",
+            timeout=0,
         )

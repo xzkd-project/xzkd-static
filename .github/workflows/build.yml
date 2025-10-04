@@ -43,7 +43,6 @@ jobs:
           uv sync
           uv run patchright install chromium
       - name: Run Program
-        continue-on-error: true
         env:
           TZ: "Asia/Shanghai"
           USTC_PASSPORT_USERNAME: ${{ secrets.USTC_PASSPORT_USERNAME }}
