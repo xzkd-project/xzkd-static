@@ -43,7 +43,12 @@ async def fetch_semester(
     save_json(courses, os.path.join(semester_path, "courses.json"))
 
     if int(semester_id) >= 221:
-        exams = await get_exams(page=page, semester_id=semester_id)
+        try:
+            exams = await get_exams(page=page, semester_id=semester_id)
+        except Exception as e:
+            print(f"Failed to get exams for semester {semester_id}: {e}")
+            exams = {}
+
         for course in courses:
             if course.id in exams.keys():
                 course.exams = exams[course.id]
