@@ -10,9 +10,9 @@ async def get_semesters(page: Page) -> list[Semester]:
 
     response = await page.request.get(
         url=url,
-        timeout=60 * 1000,
+        timeout=10 * 60 * 1000,
         fail_on_status_code=True,
-        max_retries=10,
+        max_retries=100,
     )
     json = await response.json()
 
@@ -38,9 +38,9 @@ async def get_courses(page: Page, semester_id: str) -> list[Course]:
 
     response = await page.request.get(
         url=url,
-        timeout=60 * 1000,
+        timeout=10 * 60 * 1000,
         fail_on_status_code=True,
-        max_retries=10,
+        max_retries=100,
     )
     json = await response.json()
 
@@ -89,9 +89,9 @@ async def get_exams(
 
     response = await page.request.get(
         url=url,
-        timeout=60 * 1000,
+        timeout=10 * 60 * 1000,
         fail_on_status_code=True,
-        max_retries=10,
+        max_retries=100,
     )
     json = await response.json()
 

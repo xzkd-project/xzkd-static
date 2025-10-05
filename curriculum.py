@@ -39,7 +39,12 @@ async def fetch_semester(
     if not os.path.exists(semester_path):
         os.mkdir(semester_path)
 
-    courses = await get_courses(page=page, semester_id=semester_id)
+    try:
+        courses = await get_courses(page=page, semester_id=semester_id)
+    except Exception as e:
+        print(f"Failed to get courses for semester {semester_id}: {e}")
+        return
+
     save_json(courses, os.path.join(semester_path, "courses.json"))
 
     if int(semester_id) >= 221:
