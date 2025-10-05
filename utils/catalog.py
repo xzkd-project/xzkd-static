@@ -1,3 +1,4 @@
+import asyncio
 from patchright.async_api import Page
 
 from models import Semester, Course, Exam
@@ -32,6 +33,7 @@ async def get_semesters(page: Page) -> list[Semester]:
 
 
 async def get_courses(page: Page, semester_id: str) -> list[Course]:
+    await asyncio.sleep(10)
     url = "https://catalog.ustc.edu.cn/api/teach/lesson/list-for-teach/" + semester_id
 
     response = await page.request.get(
@@ -82,6 +84,7 @@ async def get_exams(
     page: Page,
     semester_id: str,
 ) -> dict[str, list[Exam]]:
+    await asyncio.sleep(10)
     url = f"https://catalog.ustc.edu.cn/api/teach/exam/list/{semester_id}"
 
     response = await page.request.get(

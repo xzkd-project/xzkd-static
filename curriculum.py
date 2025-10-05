@@ -42,7 +42,7 @@ async def fetch_semester(
     courses = await get_courses(page=page, semester_id=semester_id)
     save_json(courses, os.path.join(semester_path, "courses.json"))
 
-    if int(semester_id) >= 321:
+    if int(semester_id) >= 221:
         exams = await get_exams(page=page, semester_id=semester_id)
         for course in courses:
             if course.id in exams.keys():
@@ -85,7 +85,7 @@ async def make_curriculum():
     async with USTCAuth() as page:
         semesters = await get_semesters(page=page)
         semesters = [
-            semester for semester in semesters if int(semester.id) >= 141
+            semester for semester in semesters if int(semester.id) >= 221
         ]  # dropping semester before 2019
 
         save_json(semesters, os.path.join(curriculum_path, "semesters.json"))
