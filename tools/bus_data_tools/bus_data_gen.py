@@ -297,6 +297,8 @@ data = BusData(
         Route(6, [south, west]),
         Route(7, [gaoxin, xianyanyuan, west, east]),
         Route(8, [east, west, xianyanyuan, gaoxin]),
+        Route(11, [gaoxin, xianyanyuan]),
+        Route(12, [xianyanyuan, gaoxin]),
     ],
     weekday_routes=list(map(lambda x: x.convert(False), [rsA, rsB, rsC, rsD, rsE, rsF]))
     + [rsG, rsH, rsI, rsJ],
