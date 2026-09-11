@@ -101,6 +101,43 @@ def _verify_builder_outputs(
             raise BuildVerificationError("RSS builder reported success without feeds")
 
 
+def _verify_room_maps(build_dir: Path) -> None:
+    manifest_path = build_dir / "room_maps.json"
+    if not manifest_path.is_file():
+        raise BuildVerificationError(f"Missing room-map manifest: {manifest_path}")
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise BuildVerificationError(
+            f"Unable to parse room-map manifest {manifest_path}: {error}"
+        ) from error
+
+    rooms = manifest.get("rooms") if isinstance(manifest, dict) else None
+    if not isinstance(rooms, list) or not rooms:
+        raise BuildVerificationError("Room-map manifest has no rooms")
+    codes: set[str] = set()
+    for room in rooms:
+        if not isinstance(room, dict):
+            raise BuildVerificationError("Room-map manifest contains a non-object room")
+        code = room.get("code")
+        image_path_value = room.get("imagePath")
+        if not isinstance(code, str) or not code or code in codes:
+            raise BuildVerificationError(
+                f"Room-map manifest has invalid code: {code!r}"
+            )
+        if not isinstance(image_path_value, str) or not image_path_value:
+            raise BuildVerificationError(f"Room-map {code} has no image path")
+        image_path = Path(image_path_value)
+        if image_path.is_absolute() or ".." in image_path.parts:
+            raise BuildVerificationError(f"Room-map {code} has unsafe image path")
+        image_file = build_dir / image_path
+        if not image_file.is_file() or image_file.stat().st_size == 0:
+            raise BuildVerificationError(
+                f"Missing room-map image for {code}: {image_file}"
+            )
+        codes.add(code)
+
+
 def _verify_contract_report(
     diagnostic_dir: Path,
     summary_path: Path | None,
@@ -162,6 +199,7 @@ def verify_build(
     _write_status_summary(summary_path, builders)
     _verify_expected_schemas(build_dir)
     _verify_builder_outputs(build_dir, builders)
+    _verify_room_maps(build_dir)
 
     if builders["curriculum"]["status"] == "ok":
         _verify_contract_report(diagnostic_dir, summary_path)

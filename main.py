@@ -11,6 +11,7 @@ from pathlib import Path
 
 from src import make_curriculum, make_rss, make_young_events
 from src.sqlite_store import GUESSES_FILENAME, SNAPSHOT_FILENAME
+from tools.room_maps import build_room_maps
 from tools.upstream_schemas import export_upstream_schemas
 
 
@@ -106,6 +107,7 @@ def main() -> None:
 
     static_dir = base_dir / "static"
     shutil.copytree(static_dir, build_dir, dirs_exist_ok=True)
+    build_room_maps(static_dir, build_dir)
 
     run_all = (
         not args.rss

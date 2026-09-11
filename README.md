@@ -14,6 +14,7 @@ GitHub Pages，由 server 的静态加载流程导入数据库。
 | `schemas/upstream/*.expected.schema.json` | 从 Pydantic 生成的上游契约 |
 | `rss/` | 清洗后的校内新闻等 XML 订阅 |
 | `bus_data*.json` / `geo_data.json` / `building_img_rules.json` / `feed_source.json` / `imgs/` | 校车、地理、建筑图规则、订阅源元数据与图片 |
+| `room_maps.json` / `imgs/rooms/` | 由 `room_map_annotations.json` 生成的、按房间高亮的楼层图 |
 
 ## 数据从哪来
 

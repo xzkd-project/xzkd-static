@@ -46,6 +46,24 @@ class BuildVerificationTest(unittest.TestCase):
             )
             (build_dir / "rss").mkdir()
             (build_dir / "rss" / "feed.xml").write_text("<rss />", encoding="utf-8")
+            (build_dir / "imgs" / "rooms").mkdir(parents=True)
+            (build_dir / "imgs" / "rooms" / "3A201.png").write_bytes(b"png")
+            (build_dir / "room_maps.json").write_text(
+                json.dumps(
+                    {
+                        "rooms": [
+                            {
+                                "code": "3A201",
+                                "building": "三教主",
+                                "floor": "2",
+                                "imagePath": "imgs/rooms/3A201.png",
+                                "sourceImagePath": "imgs/三教主_02.png",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
 
             verify_build(
                 build_dir=build_dir,
