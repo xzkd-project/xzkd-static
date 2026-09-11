@@ -6,7 +6,7 @@ from pathlib import Path
 
 from PIL import Image, ImageChops
 
-from tools.room_maps import build_room_maps
+from tools.room_maps import RoomMapError, build_room_maps
 
 ROOT = Path(__file__).resolve().parent.parent
 EXPECTED_CODES = {
@@ -81,6 +81,21 @@ class RoomMapBuildTest(unittest.TestCase):
                 self.assertEqual(
                     hashlib.sha256(first_image).digest(),
                     hashlib.sha256(second_image).digest(),
+                )
+
+    def test_rejects_source_image_size_changes(self) -> None:
+        annotations = json.loads(
+            (ROOT / "static" / "room_map_annotations.json").read_text(encoding="utf-8")
+        )
+        annotations["maps"][0]["sourceImageSize"] = [1, 1]
+        with tempfile.TemporaryDirectory() as temporary_dir:
+            annotation_path = Path(temporary_dir) / "annotations.json"
+            annotation_path.write_text(json.dumps(annotations), encoding="utf-8")
+            with self.assertRaises(RoomMapError):
+                build_room_maps(
+                    ROOT / "static",
+                    Path(temporary_dir) / "output",
+                    annotations_path=annotation_path,
                 )
 
 

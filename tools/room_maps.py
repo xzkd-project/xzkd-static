@@ -123,6 +123,21 @@ def _validate_map(
             f"Unable to open room-map source image {source_path}: {error}"
         ) from error
 
+    expected_size = map_entry.get("sourceImageSize")
+    if (
+        not isinstance(expected_size, list)
+        or len(expected_size) != 2
+        or not all(
+            isinstance(dimension, int) and not isinstance(dimension, bool)
+            for dimension in expected_size
+        )
+        or tuple(expected_size) != image_size
+    ):
+        raise RoomMapError(
+            f"Room-map source image size for {source_path} must match "
+            f"{image_size[0]}x{image_size[1]}"
+        )
+
     rooms = map_entry.get("rooms")
     if not isinstance(rooms, list) or not rooms:
         raise RoomMapError(f"Room-map {building} floor {floor} must contain rooms")
