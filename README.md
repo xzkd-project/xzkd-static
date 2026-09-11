@@ -16,6 +16,12 @@ GitHub Pages，由 server 的静态加载流程导入数据库。
 | `bus_data*.json` / `geo_data.json` / `building_img_rules.json` / `feed_source.json` / `imgs/` | 校车、地理、建筑图规则、订阅源元数据与图片 |
 | `room_maps.json` / `imgs/rooms/` | 由 `room_map_annotations.json` 生成的、按房间高亮的楼层图 |
 
+房间高亮覆盖 `building_img_rules.json` 引用的 40 张楼层图中明确标注房号的 246 个房间；未标注房号的
+空间不推测编号，查询时仍返回楼层概览。房间边界保存在 `static/room_map_annotations.json`，
+构建时生成完整楼层图，保留周边位置供定位。
+
+更新源图时需同步检查房间编号、边界坐标和图片尺寸。`uv run python -m unittest discover -s tests -q` 检查规则与标注的楼层对应、生成图片和 5201 的高亮位置。
+
 ## 数据从哪来
 
 构建器（`main.py`）按需运行：
