@@ -1,5 +1,6 @@
 import hashlib
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,7 +10,7 @@ from PIL import Image, ImageChops
 from tools.room_maps import RoomMapError, build_room_maps
 
 ROOT = Path(__file__).resolve().parent.parent
-EXPECTED_CODES = {
+PILOT_CODES = {
     "3A201",
     "3A202",
     "3A203",
@@ -29,36 +30,88 @@ EXPECTED_CODES = {
 
 
 class RoomMapBuildTest(unittest.TestCase):
-    def test_publishes_all_annotated_pilot_rooms(self) -> None:
+    def test_publishes_annotated_rooms_across_buildings(self) -> None:
+        annotations = json.loads(
+            (ROOT / "static" / "room_map_annotations.json").read_text(encoding="utf-8")
+        )
+        expected = {
+            room["code"]: floor
+            for floor in annotations["maps"]
+            for room in floor["rooms"]
+        }
+        rules = json.loads((ROOT / "static/building_img_rules.json").read_text())
+        self.assertEqual(
+            {floor["sourceImagePath"] for floor in annotations["maps"]},
+            {rule["path"].removeprefix("./") for rule in rules},
+        )
+        for code, floor in expected.items():
+            matched = next(rule for rule in rules if re.fullmatch(rule["regex"], code))
+            self.assertEqual(
+                floor["sourceImagePath"], matched["path"].removeprefix("./")
+            )
         with tempfile.TemporaryDirectory() as temporary_dir:
             output_dir = Path(temporary_dir)
             manifest_path = build_room_maps(ROOT / "static", output_dir)
-            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-
-            rooms = manifest["rooms"]
-            self.assertEqual({room["code"] for room in rooms}, EXPECTED_CODES)
-            self.assertEqual(len(rooms), len(EXPECTED_CODES))
-            self.assertEqual(
-                [room["code"] for room in rooms],
-                sorted(EXPECTED_CODES),
+            rooms = json.loads(manifest_path.read_text(encoding="utf-8"))["rooms"]
+            codes = {room["code"] for room in rooms}
+            self.assertEqual(codes, set(expected))
+            self.assertEqual(len(rooms), len(expected))
+            self.assertTrue(codes >= PILOT_CODES)
+            self.assertTrue(
+                {
+                    "5201",
+                    "1101",
+                    "2103",
+                    "GT-A401",
+                    "G2-B302",
+                    "GH-104",
+                    "ARTS401",
+                    "GX-C1001",
+                    "Z101",
+                }
+                <= codes
             )
-
-            source_path = ROOT / "static" / "imgs" / "三教主_02.png"
-            with Image.open(source_path) as source:
-                source_rgb = source.convert("RGB")
-                for room in rooms:
-                    self.assertEqual(room["building"], "三教主")
-                    self.assertEqual(room["floor"], "2")
-                    self.assertEqual(room["sourceImagePath"], "imgs/三教主_02.png")
-                    image_path = output_dir / room["imagePath"]
-                    self.assertTrue(image_path.is_file())
-                    with Image.open(image_path) as rendered:
-                        self.assertEqual(rendered.size, source.size)
-                        self.assertIsNotNone(
-                            ImageChops.difference(
-                                source_rgb, rendered.convert("RGB")
-                            ).getbbox()
-                        )
+            self.assertEqual([room["code"] for room in rooms], sorted(codes))
+            for room in rooms:
+                floor = expected[room["code"]]
+                self.assertEqual(room["building"], floor["building"])
+                self.assertEqual(room["floor"], floor["floor"])
+                self.assertEqual(room["sourceImagePath"], floor["sourceImagePath"])
+                with (
+                    Image.open(ROOT / "static" / room["sourceImagePath"]) as source,
+                    Image.open(output_dir / room["imagePath"]) as rendered,
+                ):
+                    self.assertEqual(rendered.size, source.size)
+                    self.assertIsNotNone(
+                        ImageChops.difference(
+                            source.convert("RGB"), rendered.convert("RGB")
+                        ).getbbox()
+                    )
+            # Pin room locations that previously lacked coverage or were easy to
+            # confuse with a neighboring room or the unnumbered teacher lounge.
+            for code, target, neighbor in [
+                ("5201", (1700, 640), (1400, 640)),
+                ("3A105", (1640, 600), (1570, 670)),
+                ("3A106", (1790, 500), (1640, 600)),
+                ("3A107", (1770, 340), (1790, 500)),
+                ("3A308", (1430, 540), (1060, 540)),
+                ("3A310", (1060, 540), (1430, 540)),
+            ]:
+                with (
+                    self.subTest(code=code),
+                    Image.open(output_dir / f"imgs/rooms/{code}.png") as rendered,
+                    (
+                        Image.open(ROOT / "static" / expected[code]["sourceImagePath"])
+                    ) as source,
+                ):
+                    self.assertNotEqual(
+                        rendered.getpixel(target),
+                        source.convert("RGB").getpixel(target),
+                    )
+                    self.assertEqual(
+                        rendered.getpixel(neighbor),
+                        source.convert("RGB").getpixel(neighbor),
+                    )
 
     def test_render_is_deterministic(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_dir:
@@ -71,7 +124,7 @@ class RoomMapBuildTest(unittest.TestCase):
             first_manifest = (first_dir / "room_maps.json").read_bytes()
             second_manifest = (second_dir / "room_maps.json").read_bytes()
             self.assertEqual(first_manifest, second_manifest)
-            for code in EXPECTED_CODES:
+            for code in PILOT_CODES | {"5201", "GT-A401", "GH-104"}:
                 first_image = (
                     first_dir / "imgs" / "rooms" / f"{code}.png"
                 ).read_bytes()
